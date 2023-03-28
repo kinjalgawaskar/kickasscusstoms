@@ -1,0 +1,20 @@
+html, body {
+    background-color: rgb(0, 156, 153);
+    scroll-behavior: smooth;
+  }
+  
+  /*constant for all body*/
+body {
+    margin: auto;
+    padding: auto;
+     width: 98%;
+     box-sizing: border-box;
+   }
+   
+   /*custom font used*/
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('fonts/mycustomfont.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
