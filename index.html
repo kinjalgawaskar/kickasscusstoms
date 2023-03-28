@@ -8,27 +8,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kickass Cusstoms from around the world</title>
 
-<!-- CSS FILES -->
+<!-- CSS linked files -->
 <link rel="stylesheet" href="assets/stylesheet.css">
 
 
-<!-- JAVASCRIPT FILES LINKS -->
+<!-- Javascript linked files -->
 </head>
 
 <body>
+    <!-- header section title & smiley -->
     <section>
         <h1 class = h1 > Kickass Cusstoms </h3>
         <img class="smiley" src="assets/smiley.png" alt="smiling face">
     </section>
-
-    <div class="wrap">
-        <div class="search">
-           <input type="text" class="searchTerm" placeholder="What are you looking for?">
-           <button type="submit" class="searchButton">
-             <i class="fa fa-search"></i>
-          </button>
-        </div>
-     </div>
+    
+    <!--search bar -->
+    <form>
+        <label for="search">Search</label>
+        <input id="search" type="search" pattern=".*\S.*" required>
+        <span class="caret"></span>
+    </form>
+    
     
 </body>
 </html>
