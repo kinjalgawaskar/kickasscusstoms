@@ -38,6 +38,14 @@ body {
     margin-top: -1vw;
   }
 
+  @media screen and (max-width: 601px) {
+    .searchTerm {
+    font-size: 1.8vw;
+    border: 1.3px solid #000000;
+    border-right: none;
+  }
+  }
+
   .smiley {
     width: 8%;
     height: 100%;
