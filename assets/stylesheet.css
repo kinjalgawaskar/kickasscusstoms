@@ -21,7 +21,7 @@ body {
     font-style: normal;
   }
     /*header & smiley flexbox*/
-  section {
+  .title {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -36,6 +36,20 @@ body {
     font-family:'Coolvetica';
     letter-spacing: 5px;
     margin-top: -1vw;
+    padding-left: 13vw;
+  }
+
+
+  h2 {
+    width: 80%;
+    font-size: 3vw;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 80;
+    letter-spacing: 5px;
+    margin-top: -6vw;
+    padding-left: 33vw;
+    letter-spacing: -1px;
+
   }
 
   @media screen and (max-width: 601px) {
@@ -65,10 +79,10 @@ body {
   width: 100%;
   font-family: 'Manrope', sans-serif;
   color: #1947ff;
-  font-size: 1.8vw;
-  border: 3px solid #000000;
+  font-size: 15px;
+  border: 1px solid #000000;
   border-right: none;
-  padding: 1vw;
+  padding: 10px;
   padding-left: 2vw;
   height: 1.5vw;
   border-radius: 3vw 0 0 3vw;
@@ -88,9 +102,9 @@ body {
 }
 
 .searchButton {
-  width: 4vw;
-  height: 3.7vw;
-  border: 3px solid #000000;
+  width: 3vw;
+  height: 2.5vw;
+  border: 1px solid #000000;
   background: #1947ff;
   text-align: center;
   color: #fff;
@@ -112,9 +126,7 @@ body {
 }
 
 .wrap{
-  width: 45vw;
-  left: 26vw;
-  padding-left: 5vw;
+ 
 }
 
 @media screen and (max-width: 601px) {
@@ -130,6 +142,7 @@ body {
   padding: 10px;
   padding-left: 30px;
   padding-right: 30px;
+  font-size: 11px;
 }
 
 .dropdown{
@@ -142,4 +155,83 @@ body {
   padding: 7px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  height: 3vw;
+}
+
+.container {
+  position: relative;
+  width: 320px;
+  margin: 100px auto 0 auto;
+  perspective: 800px;
+  transform: rotate(-10deg);
+}
+
+.carousel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d; 
+  animation: rotate360 90s infinite forwards linear;
+}
+
+.carousel__face { 
+  position: absolute;
+  width: 315px;
+  height: 200px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  background-size: cover;
+  box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+  display: flex;
+}
+
+span {
+  margin: auto;
+  font-size: 2rem;
+}
+
+
+.carousel__face:nth-child(1) {
+  background-image: url("https://images.pexels.com/photos/1141853/pexels-photo-1141853.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  transform: rotateY(  0deg) translateZ(430px); }
+.carousel__face:nth-child(2) { 
+  background-image: url("https://images.pexels.com/photos/1258865/pexels-photo-1258865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    transform: rotateY( 40deg) translateZ(430px); }
+.carousel__face:nth-child(3) {
+  background-image: url("https://images.pexels.com/photos/808466/pexels-photo-808466.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  transform: rotateY( 80deg) translateZ(430px); }
+.carousel__face:nth-child(4) {
+  background-image: url("https://images.pexels.com/photos/1394841/pexels-photo-1394841.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  transform: rotateY(120deg) translateZ(430px); }
+.carousel__face:nth-child(5) { 
+  background-image: url("https://images.pexels.com/photos/969679/pexels-photo-969679.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+ transform: rotateY(160deg) translateZ(430px); }
+.carousel__face:nth-child(6) { 
+  background-image: url("https://images.pexels.com/photos/1834400/pexels-photo-1834400.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+ transform: rotateY(200deg) translateZ(430px); }
+.carousel__face:nth-child(7) { 
+  background-image: url("https://images.pexels.com/photos/1415268/pexels-photo-1415268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+ transform: rotateY(240deg) translateZ(430px); }
+.carousel__face:nth-child(8) {
+  background-image: url("https://images.pexels.com/photos/135018/pexels-photo-135018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  transform: rotateY(280deg) translateZ(430px); }
+.carousel__face:nth-child(9) {
+  background-image: url("https://images.pexels.com/photos/1175135/pexels-photo-1175135.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  transform: rotateY(320deg) translateZ(430px); }
+
+
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
 }
