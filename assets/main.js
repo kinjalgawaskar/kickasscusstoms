@@ -3,6 +3,7 @@ window.stateCallback = () => {
 	console.log('Something changed!')
 }
 
+//spiral lines in the background//
 var canvas = document.querySelector( 'canvas' );
 var context = canvas.getContext( '2d' );
 
@@ -169,3 +170,20 @@ function onTouchEnd( event ) {
   document.removeEventListener( 'touchend', onTouchEnd );
   
 }
+
+//hamburger icon//
+function myFunction() {
+	var x = document.getElementById("myLinks");
+	if (x.style.display === "block") {
+	  x.style.display = "none";
+	} else {
+	  x.style.display = "block";
+	}
+  }
+
+  $('input').on('change', function() {
+    $('body').toggleClass('blue');
+  });
+  
+
+  

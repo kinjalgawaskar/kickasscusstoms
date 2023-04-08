@@ -13,21 +13,11 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400&display=swap" rel="stylesheet">
+      
+      <!-- link to hamburger icon -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
   <!-- favicon link-->
-	<!-- <link href="/assets/favicon.ico" rel="icon" sizes="any">
-	<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"> -->
-  <!-- <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-    <style>
-      #ampersand { fill: #000000; }
-  
-      @media (prefers-color-scheme: dark) {
-        #ampersand { fill: #ffffff; }
-      }
-    </style>
-    <path id="ampersand" d="M10.388 6.015h3.199v.282c-.442.035-.77.134-.983.297-.208.157-.535.64-.982 1.447-.447.807-.95 1.561-1.508 2.262.452.528.855.899 1.21 1.112.356.208.714.312 1.075.312.35 0 .647-.094.89-.282.244-.193.417-.474.519-.845l.281.206c-.187.716-.49 1.244-.906 1.584a2.23 2.23 0 0 1-1.455.51c-.416 0-.84-.112-1.272-.335-.426-.229-.893-.612-1.401-1.15-.63.558-1.198.947-1.706 1.165a4.09 4.09 0 0 1-1.615.32c-.838 0-1.503-.223-1.995-.67-.493-.447-.739-.98-.739-1.6 0-.614.22-1.226.663-1.835.441-.615 1.272-1.25 2.49-1.904-.238-.528-.4-.96-.487-1.295a3.964 3.964 0 0 1-.13-.975c0-.868.32-1.53.96-1.988A2.85 2.85 0 0 1 8.194 2.1c.605 0 1.097.18 1.478.54.38.356.571.796.571 1.318 0 .539-.185 1.01-.556 1.417-.365.406-1.015.85-1.95 1.333a30.935 30.935 0 0 0 2.019 3.153c.893-1.066 1.34-1.965 1.34-2.696a.949.949 0 0 0-.228-.625.699.699 0 0 0-.48-.243v-.282Zm-2.91.198c.63-.3 1.1-.64 1.41-1.02.314-.381.472-.805.472-1.273 0-.365-.115-.667-.343-.906a1.1 1.1 0 0 0-.838-.358c-.442 0-.777.155-1.005.465-.224.304-.335.604-.335.898 0 .25.043.528.13.838.085.305.256.757.51 1.356Zm1.181 4.76c-.67-.914-1.135-1.582-1.394-2.003a20.15 20.15 0 0 1-.853-1.569c-.61.35-1.069.736-1.378 1.158a2.293 2.293 0 0 0-.457 1.37c0 .544.175 1.021.525 1.433.35.41.823.617 1.417.617.32 0 .627-.064.921-.19.3-.128.706-.4 1.219-.816Z" />
-  </svg> -->
-
   <meta content="cookie-cutter.jpg" property="og:image">
 	<meta content="A six-sided, cubed, metal cookie cutter." property="og:image:alt">
 
@@ -46,8 +36,21 @@
 
 <body>
 
+  <!-- Hamburger icon -->
+<div class="topnav">
+    <a href="#home" class="active"></a>
+    <div id="myLinks">
+      <a href="#news">AYKM</a>
+      <a href="#contact">TOP 5</a>
+      <a href="#about">ABOUT</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
     <!-- header section title & smiley -->
-        <h1 class="h1" > Kickass Customs </h1>
+        <h1 class="h1"> Kickass Customs </h1>
           <h2 class="h2" > AROUND &nbsp;THE &nbsp;WORLD</h2>
           &nbsp;&nbsp;
 
@@ -58,15 +61,7 @@
       <button class="button">TOP 5</button>
 
       &nbsp; &nbsp;  &nbsp; &nbsp;   &nbsp; &nbsp;  &nbsp; &nbsp; 
-      <!--search bar -->
-    <div class="wrap">
-      <div class="search">
-         <input type="text" class="searchTerm" placeholder="Look up your country">
-         <button type="submit" class="searchButton">
-        </button>
-      </div>
-   </div>
-   &nbsp; &nbsp;  &nbsp; &nbsp;   &nbsp; &nbsp;  &nbsp; &nbsp; 
+   
 
    <!--continent dropdown list -->
    <label class="dropdown" for="some-option">Select Continent &nbsp; &nbsp;<!-- <code>&lt;select&gt;</code>:--></label>
@@ -81,21 +76,6 @@
    </select>
       </section>
 
-    <!-- <form>
-        <fieldset>
-          <legend>Choose your kickass level</legend>
-      
-          <input type="radio" id="kraken" name="monster" value="K">
-          <label for="kraken">Sober</label><br>
-      
-          <input type="radio" id="sasquatch" name="monster" value="S">
-          <label for="sasquatch">Smooth</label><br>
-      
-          <input type="radio" id="mothman" name="monster" value="M">
-          <label for="mothman">Trippy</label>
-        </fieldset>
-      </form> -->
-
         <!--bg audio -->
   <audio controls style="opacity: 0;">
     <source src="assets/music.mp3" type="audio/mp3">
@@ -104,19 +84,19 @@
       <!--titled images carousel -->
       <div class="container">
         <div class="carousel">
-          <div class="carousel__face"></div>
-          <div class="carousel__face"></div>
-          <div class="carousel__face"></div>
-          <div class="carousel__face"></div>
-          <div class="carousel__face"></div>
-          <div class="carousel__face"></div>
-          <div class="carousel__face"></div>
-          <div class="carousel__face"></div>
-          <div class="carousel__face"><span>KINJAL</span></div>
+          <div class="carousel__face"><span></span></div>
+          <div class="carousel__face"><span</span></div>
+          <div class="carousel__face"><span></span></div>
+          <div class="carousel__face"><span></span></div>
+          <div class="carousel__face"><span</span></div>
+          <div class="carousel__face"><span></span></div>
+          <div class="carousel__face"><span></span></div>
+          <div class="carousel__face"><span></span></div>
+          <div class="carousel__face"><span></span></div>
         </div>
       </div>
 
-      <!-- <canvas></canvas> -->
-         
+              <!--mobile carousel-->
+
 </body>
 </html>
