@@ -1,5 +1,6 @@
 html, body {
     scroll-behavior: smooth;
+    background-color: #000000;
     background-size: cover;
     background-image: "https://d2w9rnfcy7mm78.cloudfront.net/21303522/original_4e90182f13f1bb4606ba9887de5d8c14.jpg?1680983343?bc=0";
     margin: auto;
@@ -19,14 +20,16 @@ html, body {
     /*headers flexboxes*/
   h1 {
     width: 100%;
-    color: #000000;
-    font-size: 11vw;
+    color: #3c668a;
+    font-size: 9vw;
     font-family:'Coolvetica';
     letter-spacing: 7px;
-    margin-top: -3vw;
-    margin-bottom: -1vw;
+    margin-top: -2vw;
+    margin-bottom: -2vw;
     display: flex;
     justify-content: center;
+    z-index: 1;
+    position: relative;
   }
 
   @media screen and (max-width: 601px) {
@@ -39,14 +42,18 @@ html, body {
 
   h2 {
     width: 100%;
-    font-size: 2vw;
+    font-size: 1.5vw;
+    color: #ffffff;
     font-family: 'Manrope', sans-serif;
+    padding-top: 1vw;
     font-weight: 80;
     letter-spacing: 1px;
     display: flex;
     justify-content: center;
     padding-right: 0;
     right: 0;
+    z-index: 1;
+    position: relative;
   }
 
   @media screen and (max-width: 601px) {
@@ -59,6 +66,7 @@ html, body {
 
 .wrap{
   width: 33vw;
+  z-index: 2;
 }
 
 @media screen and (max-width: 601px) {
@@ -76,6 +84,7 @@ html, body {
   padding-left: 30px;
   padding-right: 30px;
   font-size: 11px;
+  z-index: 2;
 }
 
 @media screen and (max-width: 601px) {
@@ -87,6 +96,8 @@ html, body {
   /*dropdown list*/
   .dropdown{
   font-family: 'Manrope', sans-serif;
+  z-index: 2;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 601px) {
@@ -104,7 +115,8 @@ html, body {
   padding-left: 40px;
   padding-right: 10px;
   color: rgb(255, 255, 255);
-  background-color: #0037ff;
+  background-color: #4c4c4c;
+  z-index: 2;
 }
 
 @media screen and (max-width: 601px) {
@@ -118,6 +130,7 @@ section{
   justify-content: center;
   padding-top: 1vw;
   height: 2.5vw;
+  z-index: 2;
 }
   
   /*hamburger icon*/
@@ -172,11 +185,12 @@ section{
 /*desktop carousel container*/
 .container {
   position: relative;
+  opacity: 10%;
   width: 320px;
   margin: 0 auto 0 auto;
   perspective: 1000px;
   rotate: 7deg;
-  margin-top: -1vw;
+  margin-top: -20vw;
   padding-top: 3vw;
 }
 
@@ -198,15 +212,17 @@ section{
 .carousel__face { 
   position: absolute;
   border-radius: 15px;
-  width: 300px;
-  height: 180px;
+  width: 310px;
+  height: 150px;
   top: 10px;
   left: 0;
   right: 0;
   background-size: cover;
   display: flex;
 }
-
+.carousel__face { 
+  background-color: yellow;
+}
 
 .carousel__face:nth-child(1) {
   background-image: url("https://d2w9rnfcy7mm78.cloudfront.net/21302537/original_40782efead47dd3e2bf8cebd48aa7752.jpg?1680976297?bc=0");
@@ -375,4 +391,12 @@ section{
   to {
     transform: rotateY(-360deg);
   }
+}
+
+video{
+  z-index: -1;
+  object-fit: cover;
+  margin-top: -30vw;
+  width: 100%;
+  height: 100%;
 }
