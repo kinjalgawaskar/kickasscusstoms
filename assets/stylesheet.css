@@ -124,7 +124,6 @@ section{
   .mobile-container {
   max-width: 480px;
   margin: auto;
-  color: white;
   border-radius: 10px;
 }
 
@@ -212,7 +211,7 @@ section{
 .carousel__face:nth-child(1) {
   background-image: url("https://d2w9rnfcy7mm78.cloudfront.net/21302537/original_40782efead47dd3e2bf8cebd48aa7752.jpg?1680976297?bc=0");
   transform: rotateY(  0deg) translateZ(430px);
-  filter: grayscale();
+  filter: invert();
 }
   
 .carousel__face:nth-child(2) { 
@@ -236,7 +235,7 @@ section{
 .carousel__face:nth-child(5) { 
   background-image: url("https://d2w9rnfcy7mm78.cloudfront.net/21302869/original_735ab8b6331deb02661cbd9b680e478c.jpg?1680978686?bc=0");
  transform: rotateY(160deg) translateZ(430px);
- filter:grayscale()
+ filter:invert()
 }
 
 .carousel__face:nth-child(6) { 
@@ -274,23 +273,25 @@ section{
 }
 
 /*mobile carousel container*/
-.container {
-  position: relative;
-  width: 320px;
+.mobile-container {
+ display: none;
+}
+@media screen and (max-width: 601px) {
+  .mobile-container{
+    position: relative;
+  width: 100%;
   margin: 0 auto 0 auto;
-  perspective: 1000px;
-  rotate: 7deg;
+  perspective: 2000px;
+  rotate: 0deg;
   margin-top: -1vw;
   padding-top: 3vw;
+  padding: 10%;
+  display: flex;
+  }
 }
 
-@media screen and (max-width: 601px) {
-  .container {
-  display: none;
-}
-}
 
-.carousel {
+.mobile-carousel {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -299,7 +300,7 @@ section{
 }
 
 /*mobile carousel individual boxes*/
-.carousel__face { 
+.carousel__face_mobile { 
   position: absolute;
   border-radius: 15px;
   width: 300px;
@@ -348,19 +349,19 @@ section{
  filter:sepia();
 }
 
-.carousel__face:nth-child(7) { 
+.carousel__face_mobile:nth-child(7) { 
   background-image: url("https://d2w9rnfcy7mm78.cloudfront.net/21302888/original_115ac96528a12e8b8cd0b6fe62d87d5e.jpg?1680978858?bc=0");
  transform: rotateY(240deg) translateZ(430px); 
  filter:grayscale();
 }
 
-.carousel__face:nth-child(8) {
+.carousel__face_mobile:nth-child(8) {
   background-image: url("https://images.pexels.com/photos/135018/pexels-photo-135018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   transform: rotateY(280deg) translateZ(430px); 
   filter:sepia();
 }
 
-.carousel__face:nth-child(9) {
+.carousel__face_mobile:nth-child(9) {
   background-image: url("https://images.pexels.com/photos/1175135/pexels-photo-1175135.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   transform: rotateY(320deg) translateZ(430px);
   filter:grayscale();
