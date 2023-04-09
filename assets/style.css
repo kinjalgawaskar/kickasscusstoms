@@ -126,4 +126,10 @@ html, body {
   z-index: 2;
 }
   
- 
+/*responsive row*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
