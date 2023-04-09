@@ -158,3 +158,14 @@ html, body {
     max-width: 50%;
   }
 }
+
+/* responsive column for mobile */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .column img {
+    filter: grayscale(0) brightness(1);
+  }
+}
