@@ -195,7 +195,7 @@ html, body {
   margin: 0 auto 0 auto;
   perspective: 1000px;
   rotate: 7deg;
-  margin-top: -26vw;
+  margin-top: -43vw;
   padding-top: 3vw;
 }
 
@@ -210,7 +210,7 @@ html, body {
   width: 100%;
   height: 100%;
   transform-style: preserve-3d; 
-  animation: rotate360 60s infinite forwards linear;
+  animation: rotate360 60s;
 }
 
 /*desktop carousel individual boxes*/
@@ -218,7 +218,7 @@ html, body {
   position: absolute;
   border-radius: 15px;
   width: 310px;
-  height: 150px;
+  height: 160px;
   top: 10px;
   left: 0;
   right: 0;
@@ -235,7 +235,7 @@ html, body {
 .carousel__face:nth-child(2) { 
   background-image: url("https://d2w9rnfcy7mm78.cloudfront.net/21302494/original_72c1c4e532efc277b3b32bcdd453252a.jpg?1680976143?bc=0");
     transform: rotateY( 40deg) translateZ(430px);
-    filter:sepia();
+    filter:sepia(3);
 }
 
 .carousel__face:nth-child(3) {
@@ -247,7 +247,7 @@ html, body {
 .carousel__face:nth-child(4) {
   background-image: url("https://d2w9rnfcy7mm78.cloudfront.net/21302323/original_337112a03535b5c41173593ca0bb0758.jpg?1680974930?bc=0");
   transform: rotateY(120deg) translateZ(430px); 
-  filter:sepia();
+  filter:grayscale();
 }
 
 .carousel__face:nth-child(5) { 
@@ -259,7 +259,7 @@ html, body {
 .carousel__face:nth-child(6) { 
   background-image: url("https://d2w9rnfcy7mm78.cloudfront.net/21302878/original_6570784f03a3a4e2b549af329ac43b98.webp?1680978782?bc=0");
  transform: rotateY(200deg) translateZ(430px); 
- filter:sepia();
+ filter:sepia(3);
 }
 
 .carousel__face:nth-child(7) { 
@@ -271,7 +271,7 @@ html, body {
 .carousel__face:nth-child(8) {
   background-image: url("https://images.pexels.com/photos/135018/pexels-photo-135018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   transform: rotateY(280deg) translateZ(430px); 
-  filter:sepia();
+  filter:sepia(3);
 }
 
 .carousel__face:nth-child(9) {
@@ -279,7 +279,6 @@ html, body {
   transform: rotateY(320deg) translateZ(430px);
   filter:grayscale();
 }
-
 
 @keyframes rotate360 {
   from {
@@ -396,9 +395,8 @@ html, body {
 video{
   z-index: -1;
   object-fit: cover;
-  margin-top: -28vw;
-  padding-bottom: 5vw;
+  margin-top: -12vw;
   width: 100%;
   height: 100%;
-  opacity: 30%;
+  opacity: 90%;
 }
