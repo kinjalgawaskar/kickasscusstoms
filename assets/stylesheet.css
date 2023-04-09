@@ -42,15 +42,17 @@ html, body {
 
   h2 {
     width: 100%;
-    font-size: 1.5vw;
-    color: #ffffff;
-    font-family: 'Manrope', sans-serif;
-    padding-top: 2vw;
+    font-size:3vw;
+    color: #f7e7c0;
+    font-family: 'Coolvetica';
+    padding-top: 1vw;
+    padding-bottom: 2vw;
     font-weight: 80;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     display: flex;
     justify-content: center;
     padding-right: 0;
+    font-weight: 10;
     right: 0;
     z-index: 1;
     position: relative;
@@ -78,9 +80,9 @@ html, body {
   /*AYKM & Top 5 buttons*/
   .button{
   border-radius: 35px;
-  background: #ffffff;
-  color: #000000;
-  padding: 10px;
+  background: #000000;
+  color: #ffffff;
+  stroke-width: 33px;
   padding-left: 30px;
   padding-right: 30px;
   font-size: 11px;
@@ -131,7 +133,7 @@ html, body {
 section{
   display: flex;
   justify-content: center;
-  padding-top: vw;
+  margin-bottom: -1vw;
   height: 2.5vw;
   z-index: 2;
 }
