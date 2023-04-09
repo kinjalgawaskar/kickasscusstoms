@@ -185,5 +185,5 @@ function myFunction() {
     $('body').toggleClass('blue');
   });
   
-
+  //on-click event for carousel//
   
