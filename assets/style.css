@@ -124,7 +124,9 @@ html, body {
   justify-content: center;
   height: 2.5vw;
   z-index: 2;
-  margin-top: -2vw;
+  margin-top: -5vw;
+  position: fixed;
+  padding-left: 33vw;
 }
   
 /*responsive row*/
