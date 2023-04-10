@@ -70,7 +70,6 @@ html, body {
  section{
   display: flex;
   justify-content: center;
-  padding-top: vw;
   height: 2.5vw;
   z-index: 2;
 }
@@ -428,4 +427,30 @@ video{
   height: 100%;
   background-color: #5faad2;
   color: #ffffff;
+}
+
+/*Click to enter button*/
+.print{
+  border-radius: 11px;
+  letter-spacing: 3px;
+  width: 5%;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 3vw;
+  background: #000000;
+  color: #9ac3db;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding: 5px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  height: 2.5vw;
+  margin-top: -14vw;
+}
+
+@media screen and (max-width: 601px) {
+  .print{
+   justify-content: center;
+   width: 60%;
+  }
 }
