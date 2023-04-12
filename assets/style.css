@@ -17,15 +17,16 @@ html, body {
     font-weight: normal;
     font-style: normal;
   }
-     /*headers flexboxes*/
+    /*headers flexboxes*/
   h1 {
     width: 100%;
-    color: #40a3b4;
+    color: #70a0c7;
     font-size: 9vw;
-    font-family:'Coolvetica';
-    letter-spacing: 7px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    letter-spacing: -8px;
     margin-top: 1vw;
-    margin-bottom: -2vw;
+    margin-bottom: -1vw;
     display: flex;
     justify-content: center;
     z-index: 1;
@@ -35,10 +36,12 @@ html, body {
   @media screen and (max-width: 601px) {
     .h1 {
     font-size: 13vw;
-    letter-spacing: 0.6px;
+    letter-spacing: -2px;
     margin-top: 6vw;
+    align-items: center;
   }
   }
+
 
   h2 {
     width: 100%;
@@ -67,7 +70,7 @@ html, body {
 
   /*button*/
   .button{
-  border-radius: 11px;
+  border-radius: 22px;
   background: #000000;
   color: #ffffff;
   padding: 10px;
