@@ -26,7 +26,7 @@ html, body {
     font-weight: 500;
     letter-spacing: -8px;
     margin-top: 1vw;
-    margin-bottom: -1vw;
+    margin-bottom: -2.5vw;
     display: flex;
     justify-content: center;
     z-index: 1;
@@ -70,9 +70,10 @@ html, body {
 
   /*button*/
   .button{
-  border-radius: 22px;
+  border-radius: 33px;
   background: #000000;
   color: #ffffff;
+  border-color: #ffffff;
   padding: 10px;
   padding-left: 30px;
   padding-right: 30px;
@@ -88,7 +89,7 @@ html, body {
 
   /*dropdown list*/
   .dropdown{
-  font-family: 'Manrope', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
   z-index: 2;
   color: #ffffff;
 }
@@ -100,14 +101,12 @@ html, body {
 }
 
 .list{
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   width: 20%;
-  border-radius: 11px;
+  border-radius: 33px;
   border: none;
   color: #000000;
   padding: 7px;
-  padding-left: 40px;
-  padding-right: 10px;
   border-style: solid;
   border-color: rgb(255, 255, 255); 
   background-color: #000000;
@@ -124,12 +123,12 @@ html, body {
   /*menu bar section*/
   section{
   display: flex;
+  width: 100%;
   justify-content: center;
   height: 2.5vw;
   z-index: 2;
   margin-top: -5vw;
   position: fixed;
-  padding-left: 33vw;
 }
   
 /*responsive row*/
