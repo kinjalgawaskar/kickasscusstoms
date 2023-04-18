@@ -463,7 +463,12 @@ video{
 
 .donkey {
   display: block;
+  padding-top: 4vw;
   margin-left: auto;
   margin-right: auto;
-  width: 15%;
+  width: 11vw;
+}
+
+hr {
+  padding-top: 5vw;
 }
