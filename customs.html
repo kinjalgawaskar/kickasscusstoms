@@ -27,7 +27,8 @@
 <!-- Javascript linked files -->
 <script defer src="assets/main.js"></script>
 <script defer src="assets/form-state.js"></script>
-<script defer src="assets/reset.css"></script>
+<script defer src="assets/arena.js"></script>
+<script defer src="assets/script.js"></script>
 
 </head>
 
@@ -63,32 +64,152 @@
     <source src="assets/music.mp3" type="audio/mp3">
   </audio>
 
-  <div class="container-fluid">
-    <div class="row">
-      <div class="column">
-        <img src="https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
-        <img src="https://images.pexels.com/photos/2419375/pexels-photo-2419375.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
-        <img src="https://images.pexels.com/photos/2326290/pexels-photo-2326290.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
-        <img src="https://images.pexels.com/photos/3251006/pexels-photo-3251006.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
-        <img src="https://images.pexels.com/photos/1980720/pexels-photo-1980720.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
-      </div>
-      <div class="column">
-        <img src="https://images.pexels.com/photos/3546429/pexels-photo-3546429.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
-        <img src="https://images.pexels.com/photos/3889868/pexels-photo-3889868.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
-        <img src="https://images.pexels.com/photos/2091160/pexels-photo-2091160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
-        <img src="https://images.pexels.com/photos/2019546/pexels-photo-2019546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
-      </div>
-      <div class="column">
-        <img src="https://images.pexels.com/photos/3889868/pexels-photo-3889868.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
-        <img src="https://images.pexels.com/photos/2360569/pexels-photo-2360569.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
-        <img src="https://images.pexels.com/photos/3779785/pexels-photo-3779785.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
-        <img src="https://images.pexels.com/photos/259987/pexels-photo-259987.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
-        <img src="https://images.pexels.com/photos/2350514/pexels-photo-2350514.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+  <!--CHANNEL LINK VIDEO BANNER -->
+ <div class="video">
+  <a href="https://www.are.na/amaya-kothari/newyork-bd6zcl4chum" 
+  id="channel-url">
+    <video autoPlay muted loop id="video">
+      <source src="assets/linksvideo.mp4" type="video/mp4"> 
+    </video>
+  </a>
+</div>
+
+ <!-- CHANNEL DESCRIPTION -->
+ <p class="channel-description">
+</p>
+
+</section>
+
+<!-- ALL CONTENT -->
+ <ul class="
+ audio-embed-blocks 
+ audio-file-blocks 
+ image-blocks 
+ embed-blocks 
+ link-blocks 
+ pdf-blocks 
+ text-blocks 
+ video-embed-blocks 
+ video-file-blocks">
+</ul>
+
+
+</template>
+<!-- Text. -->
+<template id="text-blocks">
+  <li>
+    <figure class="text-blocks">
+      <h3 class="title"></h3>
+      <div class="content"></div> <!-- Text blocks insert their HTML here. -->
+      <figcaption class="description"></figcaption>
+      <p class="type"></p>
+      <p class="time-updated"></p>
+      <p class="time-created"></p>
+    </figure>
+  </li>
+</template>
+
+
+<!-- IMAGES --> 
+<template id="image-block">
+  <li>
+      <figure class="image-block">
+          <picture>
+          <source class="image-display">
+          <img class="image">
+          </picture>
+      </figure>
+  </li>
+</template>
+
+<!-- Articles / PDF's -->
+<template id="pdf-block">
+<li>
+<figure class="pdf-block">
+<picture>
+<source class="image-display">
+<a class="link"><img class="image"></a>
+</picture>
+</figure>
+</li>
+</template>
+
+<!-- YouTube, Vimeo, etc. -->
+<template id="video-embed-block">
+<li>
+<figure class="video-embed-block">
+  <picture>
+      <source class="image-display">
+
+      <a class="link"><img class="image"></a>
+  </picture>
+</figure>
+</li>
+</template>
+
+
+<!-- VIDEO FILES LINKS -->
+<template id="video-file-block">
+<li>
+<figure class="video-file-block">
+  <picture>
+      <source class="image-display">
+      <a class="link"><img class="image"></a>
+  </picture>
+  <video class="video" controls></video>
+</figure>
+</li>
+</template>
+
+
+<!-- LINKS TO WEBSITES -->
+<template id="link-block">
+<li>
+<figure class="link-block">
+  <picture>
+    <source class="image-display">
+      <a class="link"><img class="image"></a>
+  </picture>
+</figure>
+</li>
+</template>
+
+
+<!-- SPOTIFY, SOUNDCLOUD ETC. LINKS -->
+<template id="audio-embed-block">
+<li>
+<figure class="audio-embed"> <!-- You can use the container classes to style a whole type. -->
+<picture>
+<source class="image-display">
+          <a class="link"><img class="image"></a>
+</picture>
+</figure>
+</li>
+</template>
+
+
+<!-- AUDIO FILES -->
+<template id="audio-file-block">
+<li>
+  <figure class="audio-file-block">
+      <picture>
+          <source class="image-display">
+          <a class="link"><img class="image"></a>
+      </picture>
+      <audio class="audio" controls></audio>
+  </figure>
+</li>
+</template>
+
+
+<!-- REPLACED CHANNEL OWNER & COLLABORATOR TEXT TO NYC'S TRADEMARK PHRASE -->
+<section class="channel-owner channel-collaborator">
+    I &nbsp; ♥ &nbsp;NEW&nbsp; YORK
+</section>
+      
       </div>
     </div>
   </div>
-
-              <!--mobile carousel-->
 
 </body>
 </html>
