@@ -24,8 +24,8 @@ html, body {
     font-size: 9vw;
     font-family: 'Sedgwick Ave Display', cursive;    font-weight: 500;
     letter-spacing: -2px;
-    margin-top: 1vw;
-    margin-bottom: -1vw;
+    margin-top: 2vw;
+    margin-bottom: -2vw;
     display: flex;
     justify-content: center;
     z-index: 1;
@@ -464,7 +464,17 @@ video{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 11vw;
+  width: 9vw;
+  margin-bottom: -3vw;
+  margin-top: -19vw;
+  z-index: 2;
+}
+
+@media screen and (max-width: 601px) {
+  .donkey {
+  margin-top: -69vw;
+  width: 31vw;
+}
 }
 
 .donkey:hover {
@@ -492,6 +502,14 @@ video{
   margin-left: auto;
   margin-right: auto;
   width: 11vw;
+  z-index: 2;
+}
+
+@media screen and (max-width: 601px) {
+  .shoe {
+  margin-top: -1vw;
+  width: 31vw;
+}
 }
 
 .line1 {
@@ -501,6 +519,7 @@ video{
   left: 3%;
   margin-left: -3px;
   top: 0;
+  z-index: 2;
 }
 
 .line2 {
@@ -510,4 +529,19 @@ video{
   right: 3%;
   margin-left: -3px;
   top: 0;
+  z-index: 2;
+}
+
+.p1 {
+  color: #f7e7c0;
+  font-family: 'Coolvetica';
+  padding-left: 0.5vw;
+  writing-mode: vertical-lr;
+}
+
+.p2 {
+  color: #f7e7c0;
+  font-family: 'Coolvetica';
+  padding-left: 98vw;
+  writing-mode: vertical-lr;
 }
