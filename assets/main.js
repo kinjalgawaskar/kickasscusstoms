@@ -10,7 +10,7 @@ const imageArray = [
   "https://images.pexels.com/photos/1175135/pexels-photo-1175135.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
 ];
 
-const image = document.querySelector("img");
+const image = document.getElementById("pictures");
 const button = document.querySelector("button");
 
 window.onload = () => generateRandomPicture(imageArray);
