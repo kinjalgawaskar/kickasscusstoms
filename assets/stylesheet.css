@@ -460,20 +460,69 @@ video{
   }
 }
 
+/*1440 original viewport*/
 .donkey {
-  display: block;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 9vw;
-  margin-bottom: -3vw;
-  margin-top: -19vw;
-  z-index: 2;
+  margin-top: -18vw;
+  width: 15vw;
 }
 
-@media screen and (max-width: 601px) {
+/*2560 viewport*/
+@media screen and (max-width: 2560px)and (min-width: 1600px) {
   .donkey {
-  margin-top: -69vw;
-  width: 31vw;
+  margin-top: -7vw;
+  width: 15vw;
+}
+}
+
+/*1600 viewport*/
+@media screen and (max-width: 1600px)and (min-width: 1440px) {
+  .donkey {
+  margin-top: -19vw;
+  width: 15vw;
+}
+}
+
+
+/*1024 viewport*/
+@media screen and (max-width: 1024px)and (min-width: 768px) {
+  .donkey {
+  margin-top: -30vw;
+  width: 15vw;
+}
+}
+
+/*768 viewport*/
+@media screen and (max-width: 768px)and (min-width: 616px) {
+  .donkey {
+  margin-top: -40vw;
+  width: 15vw;
+}
+}
+
+/*616 viewport*/
+@media screen and (max-width: 616px)and (min-width: 601px) {
+  .donkey {
+  margin-top: -60vw;
+  width: 15vw;
+}
+}
+
+/*601 viewport*/
+@media screen and (max-width: 601px)and (min-width: 448px) {
+  .donkey {
+  margin-top: -70vw;
+  width:29vw;
+}
+}
+
+/*601 viewport*/
+@media screen and (max-width: 448px)and (min-width: 320px) {
+  .donkey {
+  margin-top: -75vw;
+  width:29vw;
 }
 }
 
@@ -606,5 +655,14 @@ video{
   height: 9vw;
   padding-top:6vw;
   justify-content: center;
+}
+}
+
+top-margin {
+  width: 100%;
+}
+@media screen and (min-width: 601px) {
+  .top-margin {
+    display: none;
 }
 }
