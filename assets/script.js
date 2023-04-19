@@ -2,33 +2,70 @@ window.arenaCallback = () => {
 	// Put your JavaScript in here!
 	// This will run after Are.na’s API returns your data.
 
+  window.onscroll = function() {myFunction()};
 
-const images = document.querySelectorAll('img')
+var sticky = header.offsetTop;
+let body = querySelector('body')
+let imageButton = querySelector('.image-button')
+let linksButton = querySelector('.links-button')
+let allImages = querySelector('.#image-block')
+let allLinks = querySelector('.#link-block')
 
-console.log(images)
 
-//Get all of my image blocks
-let imageBlocks = document.querySelectorAll('li.image-blocks')
-console.log(imageBlocks)
-= () => {
-imageBlocks.forEach((block)) {
 
-  //Make the blocks react on click
-  block.onClick = () => {
-    
-    //Add a class called active
-    block.classList.add ('active')
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
 }
 
-    //Remove a class called active
-block.querySelector('aside').onClick = () => {
-  block.classList.remove ('active')
-}
-}
-}
-  
+window.onscroll = function() {myFunction()};
 
-  $('#audioFrenata').on('ended', function() {
-    manageImageObjectsLevel();
-}).get(0).play();
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+imageButton.onClick = function() {
+  console.log('images')
+  //add all images
+  body.appendChild(allImages)
+  //remove all links
+  body.removeChild(allLinks)
+  };
+
+
+linksButton.onClick = function() {
+  console.log('links')
+  //remove all links
+  body.appendChild(allLinks)
+  //add all images
+  body.removeChild(allImages)
+  };
+
+
+// Get all the menu items
+const menuItems = document.querySelectorAll(".menu-item");
+
+// Add a click event listener to each menu item
+menuItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    // Remove the active class from all menu items
+    menuItems.forEach((item) => {
+      item.classList.remove("active");
+    });
+
+    // Add the active class to the clicked menu item
+    item.classList.add("active");
+  });
+});
+
+}
 
