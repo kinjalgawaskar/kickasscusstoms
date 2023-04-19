@@ -34,7 +34,7 @@
   
     // Appending the shoe to the drop target
     event.target.appendChild(element);
-    window.open("customs.html", "_blank");
+    window.open("customs.html", "_self");
   
   }
   
