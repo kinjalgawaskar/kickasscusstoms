@@ -183,3 +183,10 @@ img {
 	justify-content: center;
 	align-items: center;
 }
+
+.peach {
+  width: 2vw;
+  height: 2vw;
+  padding-left: 9px;
+  padding-top: 1.5vw;
+}

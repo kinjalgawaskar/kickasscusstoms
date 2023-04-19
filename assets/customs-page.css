@@ -1,6 +1,6 @@
 html, body {
     scroll-behavior: smooth;
-    background-color: #000000;
+    background-color: #ffffff;
     background-size: cover;
     margin: auto;
     padding: auto;
@@ -19,7 +19,7 @@ html, body {
     /*headers flexboxes*/
   h1 {
     width: 100%;
-    color: #ffffff;
+    color: #000000;
     font-size: 9vw;
     font-family: 'Sedgwick Ave Display', cursive;    font-weight: 500;
     letter-spacing: -2px;
@@ -43,7 +43,7 @@ html, body {
   h2 {
     width: 100%;
     font-size: 2.5vw;
-    color: #f7e7c0;
+    color:  #9a9a9a;
     font-family: 'Coolvetica';
     padding-bottom: 2vw;
     font-weight: 80;
@@ -68,9 +68,9 @@ html, body {
   /*button*/
   button{
   border-radius: 33px;
-  background: #000000;
-  color: #ffffff;
-  border-color: #ffffff;
+  background: #ffffff;
+  color: #000000;
+  border-color: #000000;
   padding-left: 3vw;
   padding-right: 3vw;
   font-size: 11px;
@@ -161,4 +161,11 @@ img {
 	justify-content: center;
 	align-items: center;
     padding-top: 1vw;
+}
+
+.peach {
+  width: 2vw;
+  height: 2vw;
+  padding-left: 9px;
+  padding-top: 1.5vw;
 }
