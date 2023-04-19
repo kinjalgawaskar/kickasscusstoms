@@ -42,7 +42,7 @@ html, body {
 
   h2 {
     width: 100%;
-    font-size:3vw;
+    font-size: 2.5vw;
     color: #f7e7c0;
     font-family: 'Coolvetica';
     padding-bottom: 2vw;
@@ -127,29 +127,38 @@ html, body {
   justify-content: center;
   height: 2.5vw;
   z-index: 2;
-  margin-top: -2vw;
-  position: fixed;
+  margin-top: -3vw;
+  margin-bottom: -2vw;
 }
 
 
 img {
-	width: 50%;
+	width: 66vw;
+    height: 33vw;
     border-radius: 22px;
     object-fit: cover; 
-    margin-top: -15vw;
 }
+
 @media screen and (max-width: 601px) {
     img{
-        width: 90%;
+        width: 50%;
         border-radius: 15px;
         object-fit: cover; 
-        margin-top: -3vw;
+        background-size: cover;
     }
   }
+
+
+.white-box {
+    width: 33vw;
+    height: 32vw;
+    border-radius: 22px;
+    background-color: #ffffff;
+}
 
 .flex {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    padding-top: 20vw;
+    padding-top: 1vw;
 }
