@@ -517,10 +517,11 @@ video{
 }
 }
 
-/*601 viewport*/
+/*448 viewport*/
 @media screen and (max-width: 448px)and (min-width: 320px) {
   .donkey {
   margin-top: -75vw;
+  padding-left: 5vw;
   width:29vw;
 }
 }
@@ -544,6 +545,20 @@ video{
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+.shoe {
+  margin-top: -19vw;
+  width: 33vw;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+@media screen and (min-width: 601px) {
+  .shoe {
+  display: none;
+}
+}
+
 .girl {
   margin-top: -19vw;
   width: 33vw;
@@ -552,8 +567,7 @@ video{
 
 @media screen and (max-width: 601px) {
   .girl {
-  margin-top: -1vw;
-  width: 31vw;
+  display: none;
 }
 }
 
@@ -639,7 +653,7 @@ video{
   width: 2vw;
   height: 2vw;
   padding-left: 9px;
-  padding-top: 1.5vw;
+  mar-top: 1.5vw;
 }
 @media screen and (max-width: 601px) {
   .peach {
