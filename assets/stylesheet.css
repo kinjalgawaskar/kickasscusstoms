@@ -6,11 +6,7 @@ html, body {
     margin: auto;
     padding: auto;
   }
-   /* :root {
-    font-size: calc(16px + (24 - 16)*(100vw - 320px)/(1280 - 320));
-  } */
-
-   /*custom font used*/
+  
 @font-face {
     font-family: 'Coolvetica';
     src: url('fonts/mycustomfont.otf') format('opentype');
@@ -658,14 +654,15 @@ video{
   width: 2vw;
   height: 2vw;
   padding-left: 9px;
-  mar-top: 1.5vw;
+padding-bottom: 2.5vw;
 }
 @media screen and (max-width: 601px) {
   .peach {
-    width: 9vw;
+    width: 7vw;
+    margin-top: -3vw;
     display: flex;
-    padding-left: 45%;
-  height: 9vw;
+    padding-left: 47%;
+  height: 7vw;
   padding-top:6vw;
   justify-content: center;
 }
