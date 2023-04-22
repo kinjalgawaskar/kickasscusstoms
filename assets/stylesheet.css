@@ -68,12 +68,12 @@ html, body {
   }
 
    /*click to enter button section*/
- section{
+ /* section{
   display: flex;
   justify-content: center;
   height: 2.5vw;
   z-index: 2;
-}
+} */
 /*Click to enter button*/
   .button{
   border-radius: 33px;
@@ -132,11 +132,11 @@ html, body {
   }
 }
 
-@media screen and (max-width: 601px) {
+/* @media screen and (max-width: 601px) {
   .section{
     height: 5vw;
   }
-}
+} */
   
   /*hamburger icon*/
   .mobile-container {
@@ -462,17 +462,17 @@ video{
 
 /*1440 original viewport*/
 .donkey {
-  display: flex;
   justify-content:left;
-  margin-top: -18vw;
-  width: 15vw;
+  height: 100%;
+  margin-top: -11vw;
+  width: auto;
 }
 
 /*2560 viewport*/
 @media screen and (max-width: 2560px)and (min-width: 1600px) {
   .donkey {
   margin-top: -7vw;
-  width: 15vw;
+  width: auto;
 }
 }
 
@@ -545,7 +545,8 @@ video{
 }
 
 .girl {
-  width: 31vw;
+  margin-top: -19vw;
+  width: 33vw;
   height: 100%;
 }
 
@@ -561,7 +562,6 @@ video{
   height: 100%;
   position: absolute;
   left: 3.5vw;
-  margin-left: -3px;
   top: 0;
   z-index: 2;
 }
@@ -580,8 +580,7 @@ video{
   border-left: 2px solid rgb(0, 0, 0);
   height: 100%;
   position: absolute;
-  right: 4vw;
-  margin-left: -3px;
+  right: 3.5vw;
   top: 0;
   z-index: 2;
 }
@@ -660,4 +659,9 @@ top-margin {
   .top-margin {
     display: none;
 }
+}
+
+.phase {
+  display: flex;
+  justify-content: center;
 }
