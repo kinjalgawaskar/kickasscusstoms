@@ -463,8 +463,7 @@ video{
 /*1440 original viewport*/
 .donkey {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content:left;
   margin-top: -18vw;
   width: 15vw;
 }
@@ -545,17 +544,13 @@ video{
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-.shoe {
-  display: block;
-  padding-top: 8vw;
-  margin-left: auto;
-  margin-right: auto;
-  width: 11vw;
-  z-index: 2;
+.girl {
+  width: 31vw;
+  height: 100%;
 }
 
 @media screen and (max-width: 601px) {
-  .shoe {
+  .girl {
   margin-top: -1vw;
   width: 31vw;
 }

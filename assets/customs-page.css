@@ -133,9 +133,8 @@ html, body {
 
    /*pictures within the slider*/
 .pictures {
-	width: 60vw;
-    height: 32vw;
     border-radius: 0px;
+    height: 35vw;
     object-fit: cover; 
     box-shadow:5px 5px rgb(0, 0, 0);
 }
@@ -143,12 +142,22 @@ html, body {
 @media screen and (max-width: 601px) {
     .pictures{
         width: 50%;
-        border-radius: 0px;
         object-fit: cover; 
         background-size: cover;
     }
   }
  
+
+.orange {
+  height: 35vw;
+  width: 55vw;
+  background-color: #ffffff;
+  border-radius: 0px;
+  background-color: #f77d20;
+  box-shadow:5px 5px rgb(0, 0, 0);
+  margin-top: -3px;
+}
+
      /*logo*/
 .peach {
   width: 2vw;
@@ -175,7 +184,7 @@ html, body {
     border-left: 1px solid rgb(0, 0, 0);
   height: 100%;
   position: absolute;
-  margin-left: 1vw;
+  margin-right: 3vw;
   top: 0;
   z-index: 2;
   }
@@ -186,8 +195,7 @@ html, body {
   border-left: 2px solid rgb(0, 0, 0);
   height: 100%;
   position: absolute;
-  right: 4vw;
-  margin-left: -3px;
+  right: 3vw;
   top: 0;
   z-index: 2;
 }
@@ -204,7 +212,7 @@ html, body {
 
    /*slider container bg*/
 .slider-container {
-  background-color: #000000;
+  background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -216,7 +224,6 @@ html, body {
   width: 100%;
   max-width: 88vw;
   height: 39vw;
-  text-align: center;
   border-radius: 20px;
   overflow: hidden;
   position: relative;
@@ -265,14 +272,14 @@ a.slide__prev,
 .slider::before {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
-  left: 5%;
+  left: 2%;
 }
 
 a.slide__next,
 .slider::after {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
-  right: 5%;
+  right: 2%;
 }
 
 .slider::before,
@@ -316,3 +323,28 @@ a.slide__next,
   margin: 0 10px 0 10px;
 }
 
+.title {
+  font-size: 3vw;
+  font-family: 'Manrope', sans-serif;
+  padding-left: 2vw;
+  padding-top: 33px;
+  padding-bottom: 1vw;
+  letter-spacing: -1px;
+  font-weight: 500;
+  margin-top: -0.5vw;
+}
+
+.sub-title {
+  font-size: 2vw;
+  font-family: 'Manrope', sans-serif;
+  padding-left: 2vw;
+  padding-bottom: 1vw;
+  margin-top: -0.5vw;
+}
+
+.paragraph {
+  font-size: 1vw;
+  font-family: 'Manrope', sans-serif;
+  padding-left: 2vw;
+    margin-top: -0.5vw;
+}
