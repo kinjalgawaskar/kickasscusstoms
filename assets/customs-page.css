@@ -196,3 +196,43 @@ html, body {
   padding-left: 1.5vw;
   margin-top: -0.5vw;
 }
+
+.line1 {
+  border-left: 2px solid rgb(0, 0, 0);
+  height: 100%;
+  position: absolute;
+  left: 3.5vw;
+  margin-left: -3px;
+  top: 0;
+  z-index: 2;
+}
+@media screen and (max-width: 601px) {
+  .line1{
+    border-left: 1px solid rgb(0, 0, 0);
+  height: 100%;
+  position: absolute;
+  margin-left: 1vw;
+  top: 0;
+  z-index: 2;
+  }
+}
+
+.line2 {
+  border-left: 2px solid rgb(0, 0, 0);
+  height: 100%;
+  position: absolute;
+  right: 4vw;
+  margin-left: -3px;
+  top: 0;
+  z-index: 2;
+}
+@media screen and (max-width: 601px) {
+  .line2{
+    border-left: 1px solid rgb(0, 0, 0);
+  height: 100%;
+  position: absolute;
+  margin-left: 3vw;
+  top: 0;
+  z-index: 2;
+  }
+}

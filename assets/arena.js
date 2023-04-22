@@ -133,7 +133,7 @@ const showRelativeDate = (date) => {
 	const month =  day * 30
 	const year =   month * 12
 
-	if      (elapsed < 30)                     return `right now`
+	if      (elapsed < 30)                     return `just now`
 	else if (elapsed < minute)                 return `${elapsed} seconds ago`
 	else if (elapsed < minute * 2)             return `a minute ago`
 	else if (elapsed < hour)                   return `${Math.floor(elapsed / minute)} minutes ago`
@@ -224,23 +224,4 @@ fetch(`https://api.are.na/v2/channels/${channel}?per=100`, {cache: 'no-store'})
 		parseBlocks(data)
 		window.arenaCallback?.()
 	})
-
-
-
-	var image = document.getElementById("image-block");
-	image.onclick = function() {
-		window.open(image.src);
-	
-	const images = document.querySelectorAll('img')
-	
-	console.log(images)
-	}
-	
-	//Get all of my image blocks
-	let imageBlocks = document.querySelectorAll('li.image-blocks')
-	console.log(imageBlocks)
-	//Make the blocks react on click
-	//Add or remove a class called active
-
-
 
