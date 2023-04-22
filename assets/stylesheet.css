@@ -545,6 +545,11 @@ video{
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+.shoebg {
+  display: flex;
+  justify-content: center;
+}
+
 .shoe {
   margin-top: -19vw;
   width: 33vw;
