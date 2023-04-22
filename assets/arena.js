@@ -214,7 +214,6 @@ const renderBlock = (block, type) => {
 }
 
 
-
 const channel = document.getElementById('channel-url').href.split('/').filter(Boolean).pop()
 
 fetch(`https://api.are.na/v2/channels/${channel}?per=100`, {cache: 'no-store'})
