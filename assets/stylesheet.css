@@ -39,17 +39,15 @@ html, body {
 
   h2 {
     width: 100%;
-    font-size: 2.5vw;
-    color: #9a9a9a;
-    font-family: 'Coolvetica';
+    font-size: 2vw;
+    color:  #9a9a9a;
+    font-family: 'Manrope', sans-serif;
     padding-bottom: 2vw;
-    font-weight: 80;
-    letter-spacing: 2px;
+    letter-spacing: -1px;
     display: flex;
     justify-content: center;
     padding-right: 0;
-    font-weight: 10;
-    margin-top: 2vw;
+    font-weight: 900;
     right: 0;
     z-index: 1;
     position: relative;
@@ -57,9 +55,9 @@ html, body {
 
   @media screen and (max-width: 601px) {
     .h2 {
-    font-size: 6vw;
+    font-size: 5vw;
     letter-spacing: 0.6px;
-    margin-top: 2vw;
+    margin-top: 1vw;
   }
   }
 
@@ -516,9 +514,9 @@ video{
 /*448 viewport*/
 @media screen and (max-width: 448px)and (min-width: 320px) {
   .donkey {
-  margin-top: -75vw;
+  margin-top: -95vw;
   padding-left: 5vw;
-  width:29vw;
+  width:31vw;
 }
 }
 
@@ -548,10 +546,11 @@ video{
 
 .shoe {
   margin-top: -19vw;
-  width: 33vw;
+  width: 40vw;
   height: 100%;
   justify-content: center;
   display: flex;
+  margin-top: -30vw;
 }
 
 @media screen and (min-width: 601px) {
@@ -584,8 +583,8 @@ video{
   .line1{
     border-left: 1px solid rgb(0, 0, 0);
   height: 100%;
+  left: 7vw;
   position: absolute;
-  margin-left: 1vw;
   top: 0;
   z-index: 2;
   }
@@ -603,8 +602,8 @@ video{
   .line2{
     border-left: 1px solid rgb(0, 0, 0);
   height: 100%;
+  right: 7vw;
   position: absolute;
-  margin-left: 3vw;
   top: 0;
   z-index: 2;
   }
@@ -613,40 +612,28 @@ video{
 .p1 {
   color: #000000;
   margin-top: 2vw;
-  font-family: 'Coolvetica';
+  font-family: 'Manrope', sans-serif;
   padding-left: 0.8vw;
   writing-mode: vertical-lr;
   letter-spacing: 3px;
 }
 @media screen and (max-width: 601px) {
   .p1{
-    color: #000000;
-    margin-top: 2vw;
-    font-family: 'Coolvetica';
-    font-size: 3vw;
-    writing-mode: vertical-lr;
-    letter-spacing: 3px;
-    padding-left: 5vw;
+    display: none;
   }
 }
 
 .p2 {
   color: #000000;
   margin-top: -13vw;
-  font-family: 'Coolvetica';
+  font-family: 'Manrope', sans-serif;
   padding-left:98vw;
   writing-mode: vertical-lr;
   letter-spacing: 3px;
 }
 @media screen and (max-width: 601px) {
   .p2{
-    color: #000000;
-  margin-top: -13vw;
-  font-family: 'Coolvetica';
-  padding-left:90vw;
-  writing-mode: vertical-lr;
-  letter-spacing: 3px;
-  font-size: 3vw;
+    display: none;
   }
 }
 
@@ -680,4 +667,36 @@ top-margin {
 .phase {
   display: flex;
   justify-content: center;
+}
+
+.p3 {
+  color: #000000;
+  margin-top: 23vw;
+  font-family: 'Manrope', sans-serif;
+  padding-left: 0.8vw;
+  font-size: 3vw;
+  writing-mode: vertical-lr;
+  letter-spacing: 3px;
+}
+@media screen and (min-width: 601px) {
+  .p3{
+    display: none;
+  }
+}
+
+.p4 {
+  color: #000000;
+  margin-top: -77vw;
+  font-family: 'Manrope', sans-serif;
+  right: 1vw;
+  font-size: 3vw;
+  position: absolute;
+  writing-mode: vertical-lr;
+  letter-spacing: 3px;
+  padding-right: 0.5vw;
+}
+@media screen and (min-width: 601px) {
+  .p4{
+    display: none;
+  }
 }
