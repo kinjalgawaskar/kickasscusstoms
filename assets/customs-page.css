@@ -22,7 +22,8 @@ html, body {
     width: 100%;
     color: #000000;
     font-size: 9vw;
-    font-family: 'Sedgwick Ave Display', cursive;    font-weight: 500;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-weight: 500;
     letter-spacing: -2px;
     margin-top: -2vw;
     margin-bottom: -3.5vw;
@@ -158,57 +159,68 @@ html, body {
   margin-top: -3px;
 }
 
-     /*logo*/
-.peach {
-  width: 2vw;
-  height: 2vw;
-  padding-left: 9px;
-  padding-top: 1.5vw;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
+    /*logo*/
+    .peach {
+      width: 2vw;
+      height: 2vw;
+      padding-left: 9px;
+      padding-top: 1.5vw;
+      position: -webkit-sticky; /* Safari */
+      position: sticky;
+    }
+@media screen and (max-width: 601px) {
+  .peach {
+    width: 7vw;
+    margin-top: -3vw;
+    display: flex;
+    padding-left: 47%;
+  height: 7vw;
+  padding-top:6vw;
+  justify-content: center;
+}
 }
 
 
    /*left margin line*/
    .line1 {
-  border-left: 2px solid rgb(0, 0, 0);
-  height: 100%;
-  position: absolute;
-  left: 3.5vw;
-  margin-left: -3px;
-  top: 0;
-  z-index: 2;
-}
-@media screen and (max-width: 601px) {
-  .line1{
-    border-left: 1px solid rgb(0, 0, 0);
-  height: 100%;
-  position: absolute;
-  margin-right: 3vw;
-  top: 0;
-  z-index: 2;
+    border-left: 2px solid rgb(0, 0, 0);
+    height: 100%;
+    position: absolute;
+    left: 3.5vw;
+    top: 0;
+    z-index: 2;
   }
-}
-
-   /*right margin line*/
-   .line2 {
-  border-left: 2px solid rgb(0, 0, 0);
-  height: 100%;
-  position: absolute;
-  right: 3vw;
-  top: 0;
-  z-index: 2;
-}
-@media screen and (max-width: 601px) {
-  .line2{
-    border-left: 1px solid rgb(0, 0, 0);
-  height: 100%;
-  position: absolute;
-  margin-left: 3vw;
-  top: 0;
-  z-index: 2;
+  @media screen and (max-width: 601px) {
+    .line1{
+      border-left: 1px solid rgb(0, 0, 0);
+    height: 100%;
+    left: 7vw;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    }
   }
-}
+  
+     /*right margin line*/
+.line2 {
+    border-left: 2px solid rgb(0, 0, 0);
+    height: 100%;
+    position: absolute;
+    right: 3.5vw;
+    top: 0;
+    z-index: 2;
+  }
+  @media screen and (max-width: 601px) {
+    .line2{
+      border-left: 1px solid rgb(0, 0, 0);
+    height: 100%;
+    right: 7vw;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    }
+  }
+  
 
    /*slider container bg*/
 .slider-container {
@@ -326,9 +338,10 @@ a.slide__next,
 .title {
   font-size: 3vw;
   font-family: 'Manrope', sans-serif;
+  line-height: 3.2vw;
   padding-left: 2vw;
   padding-top: 33px;
-  padding-bottom: 1vw;
+  padding-bottom: 2vw;
   letter-spacing: -1px;
   font-weight: 500;
   margin-top: -0.5vw;
@@ -337,14 +350,25 @@ a.slide__next,
 .sub-title {
   font-size: 2vw;
   font-family: 'Manrope', sans-serif;
+  color: #ffbe8d;
   padding-left: 2vw;
   padding-bottom: 1vw;
   margin-top: -0.5vw;
 }
 
 .paragraph {
-  font-size: 1vw;
+  font-size: 1.2vw;
   font-family: 'Manrope', sans-serif;
   padding-left: 2vw;
-    margin-top: -0.5vw;
+    margin-top: 1vw;
+    width: 26vw;
+}
+
+top-margin {
+  width: 100%;
+}
+@media screen and (min-width: 601px) {
+  .top-margin {
+    display: none;
+}
 }
