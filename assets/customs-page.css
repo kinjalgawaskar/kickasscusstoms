@@ -129,20 +129,13 @@ html, body {
     object-fit: cover; 
     box-shadow:5px 5px rgb(0, 0, 0);
   }
+
   .pictures:hover {
     filter:saturate();
     box-shadow:5px 5px rgb(73, 233, 20);
     cursor: default;
     }
 
-@media screen and (max-width: 601px) {
-    .pictures{
-        width: 50%;
-        object-fit: cover; 
-        background-size: cover;
-    }
-  }
- 
 
 .orange {
   height: 35vw;
@@ -156,6 +149,10 @@ html, body {
   background-color: #ffffff;
   box-shadow:5px 5px rgb(73, 233, 20);
   cursor: default;
+}
+@media screen and (max-width: 601px) {
+  .orange{
+    display: none;    }
 }
 
 
@@ -230,6 +227,11 @@ html, body {
   justify-content: center;
   height: 100%;
   margin-top: -3vw;
+}
+@media screen and (max-width: 601px) {
+  .slider-container {
+   display: none;
+}
 }
 
 .slider {
@@ -350,6 +352,7 @@ a.slide__next,
   margin-top: -0.5vw;
 }
 
+
 .paragraph {
   font-size: 16px;
   font-family: 'Manrope', sans-serif;
@@ -357,6 +360,7 @@ a.slide__next,
     margin-top: 1vw;
     width: 26vw;
 }
+
 
 top-margin {
   width: 100%;
@@ -366,3 +370,69 @@ top-margin {
     display: none;
 }
 }
+
+
+  .mobile-title{
+    font-size: 35px;
+  width: 50%;
+  font-family: 'Manrope', sans-serif;
+  line-height: 0;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  letter-spacing: -1px;
+  font-weight: 500;
+  margin-top: 0;
+  }
+  @media screen and (min-width: 601px) {
+    .mobile-title{
+     display:none;
+    }
+  }
+
+
+  .mobile-sub-title{
+    font-size: 20px;
+    font-family: 'Manrope', sans-serif;
+    color: #000000;
+    padding-left: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+  }
+  @media screen and (min-width: 601px) {
+    .mobile-sub-title{
+     display:none;
+    }
+  }
+
+
+  .mobile-paragraph{
+    font-size: 16px;
+    font-family: 'Manrope', sans-serif;
+    padding-left: 0;
+      margin-top: 0;
+      width:50%;
+  }
+  @media screen and (min-width: 601px) {
+    .mobile-paragraph{
+     display:none;
+    }
+  }
+
+
+    .mobile-pictures{
+      height: 100%;
+      width: 80%;
+      height: 100%;
+      object-fit: contain;
+      box-shadow:3px 3px rgb(73, 233, 20);
+      justify-content: center;
+      display: flex;
+      align-items: center;
+     }
+     @media screen and (min-width: 601px) {
+      .mobile-pictures{
+       display:none;
+      }
+    }
+  
