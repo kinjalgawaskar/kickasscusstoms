@@ -2,64 +2,57 @@ html, body {
     scroll-behavior: smooth;
     background-color: #ffffff;
     background-size: cover;
-    background-image: "https://d2w9rnfcy7mm78.cloudfront.net/21303522/original_4e90182f13f1bb4606ba9887de5d8c14.jpg?1680983343?bc=0";
     margin: auto;
     padding: auto;
   }
   
-@font-face {
-    font-family: 'Coolvetica';
-    src: url('fonts/mycustomfont.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
-      /*headers flexboxes*/
-  h1 {
-    width: 100%;
-    color: #000000;
-    font-size: 9vw;
-    font-family: 'Sedgwick Ave Display', cursive;    font-weight: 500;
-    letter-spacing: -2px;
-    margin-top: -2vw;
-    margin-bottom: -3.5vw;
-    display: flex;
-    justify-content: center;
-    z-index: 1;
-    position: relative;
-  }
-
-  @media screen and (max-width: 601px) {
-    .h1 {
-    font-size: 13vw;
-    letter-spacing: -2px;
-    margin-top: 6vw;
-    align-items: center;
-  }
-  }
-
-  h2 {
-    width: 100%;
-    font-size: 2vw;
-    color:  #9a9a9a;
-    font-family: 'Manrope', sans-serif;
-    padding-bottom: 2vw;
-    letter-spacing: -1px;
-    display: flex;
-    justify-content: center;
-    padding-right: 0;
-    font-weight: 900;
-    right: 0;
-    z-index: 1;
-    position: relative;
-  }
-
-  @media screen and (max-width: 601px) {
-    .h2 {
-    font-size: 5vw;
-    letter-spacing: 0.6px;
-    margin-top: 1vw;
-  }
-  }
+    /*headers flexboxes*/
+    h1 {
+      width: 100%;
+      color: #000000;
+      font-size: 9vw;
+      font-family: 'Sedgwick Ave Display', cursive;    font-weight: 500;
+      letter-spacing: -2px;
+      margin-top: -2vw;
+      margin-bottom: -3.5vw;
+      display: flex;
+      justify-content: center;
+      z-index: 1;
+      position: relative;
+    }
+  
+    @media screen and (max-width: 601px) {
+      .h1 {
+      font-size: 13vw;
+      letter-spacing: -2px;
+      margin-top: 6vw;
+      align-items: center;
+    }
+    }
+  
+    h2 {
+      width: 100%;
+      font-size: 2vw;
+      color:  #9a9a9a;
+      font-family: 'Manrope', sans-serif;
+      padding-bottom: 2vw;
+      letter-spacing: -1px;
+      display: flex;
+      justify-content: center;
+      padding-right: 0;
+      font-weight: 900;
+      right: 0;
+      z-index: 1;
+      position: relative;
+    }
+  
+    @media screen and (max-width: 601px) {
+      .h2 {
+      font-size: 6vw;
+      letter-spacing: 0.6px;
+      margin-top: -1vw;
+    }
+    }
 
    /*click to enter button section*/
  /* section{
@@ -69,27 +62,6 @@ html, body {
   z-index: 2;
 } */
 /*Click to enter button*/
-  .button{
-  border-radius: 33px;
-  letter-spacing: 3px;
-  width: 50%;
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 20px;
-  background: #000000;
-  color: #ffffff;
-  padding-left: 30px;
-  border-color: #ffffff;
-  padding-right: 30px;
-  font-size: 11px;
-  z-index: 2;
-}
-
-@media screen and (max-width: 601px) {
-  .button{
-   justify-content: center;
-   width: 60%;
-  }
-}
 
   /*dropdown list*/
   .dropdown{
@@ -506,8 +478,8 @@ video{
 /*601 viewport*/
 @media screen and (max-width: 601px)and (min-width: 448px) {
   .donkey {
-  margin-top: -70vw;
-  width:29vw;
+  margin-top: -90vw;
+  width:25vw;
 }
 }
 
@@ -637,12 +609,15 @@ video{
   }
 }
 
-.peach {
-  width: 2vw;
-  height: 2vw;
-  padding-left: 9px;
-padding-bottom: 2.5vw;
-}
+     /*logo*/
+     .peach {
+      width: 2vw;
+      height: 2vw;
+      padding-left: 9px;
+      padding-top: 1.5vw;
+      position: -webkit-sticky; /* Safari */
+      position: sticky;
+    }
 @media screen and (max-width: 601px) {
   .peach {
     width: 7vw;
@@ -667,11 +642,12 @@ top-margin {
 .phase {
   display: flex;
   justify-content: center;
+  margin-top: 5vw;
 }
 
 .p3 {
   color: #000000;
-  margin-top: 23vw;
+  margin-top: 13vw;
   font-family: 'Manrope', sans-serif;
   padding-left: 0.8vw;
   font-size: 3vw;
@@ -686,7 +662,7 @@ top-margin {
 
 .p4 {
   color: #000000;
-  margin-top: -77vw;
+  margin-top: -80vw;
   font-family: 'Manrope', sans-serif;
   right: 1vw;
   font-size: 3vw;
