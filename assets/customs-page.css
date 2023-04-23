@@ -190,7 +190,7 @@ html, body {
   @media screen and (max-width: 601px) {
     .line1{
       border-left: 1px solid rgb(0, 0, 0);
-    height: 100%;
+    height: 200%;
     left: 7vw;
     position: absolute;
     top: 0;
@@ -373,16 +373,16 @@ top-margin {
 
 
   .mobile-title{
-    font-size: 35px;
-  width: 50%;
+    font-size: 30px;
   font-family: 'Manrope', sans-serif;
-  line-height: 0;
-  padding-left: 0;
+  line-height: 9vw;
   padding-top: 0;
   padding-bottom: 0;
   letter-spacing: -1px;
   font-weight: 500;
-  margin-top: 0;
+  padding-left: 10vw;
+  margin-top: 8vw;
+  width:80%;
   }
   @media screen and (min-width: 601px) {
     .mobile-title{
@@ -395,9 +395,10 @@ top-margin {
     font-size: 20px;
     font-family: 'Manrope', sans-serif;
     color: #000000;
-    padding-left: 0;
     padding-bottom: 0;
-    margin-top: 0;
+    padding-left: 10vw;
+    margin-top: 4vw;
+    width:80%;
   }
   @media screen and (min-width: 601px) {
     .mobile-sub-title{
@@ -407,18 +408,19 @@ top-margin {
 
 
   .mobile-paragraph{
-    font-size: 16px;
+    font-size: 15px;
     font-family: 'Manrope', sans-serif;
-    padding-left: 0;
+    font-weight: 400;
+    padding-left: 10vw;
+    padding-bottom: 9vw;
       margin-top: 0;
-      width:50%;
+      width:80%;
   }
   @media screen and (min-width: 601px) {
     .mobile-paragraph{
      display:none;
     }
   }
-
 
     .mobile-pictures{
       height: 100%;
@@ -429,6 +431,8 @@ top-margin {
       justify-content: center;
       display: flex;
       align-items: center;
+      padding-left: 10vw;
+      margin-top: -7vw;
      }
      @media screen and (min-width: 601px) {
       .mobile-pictures{
