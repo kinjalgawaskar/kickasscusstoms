@@ -538,7 +538,7 @@ video{
   height: 100%;
 }
 .girl:hover {
-  animation: rotation 2s infinite linear; 
+  animation: rotation 0.3s linear; 
   animation-iteration-count: initial;
 }
 @keyframes rotation {
@@ -546,7 +546,7 @@ video{
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(359deg);
+    transform: rotate(-5deg);
   }
 }
 @media screen and (max-width: 601px) {
@@ -689,3 +689,4 @@ top-margin {
     display: none;
   }
 }
+
