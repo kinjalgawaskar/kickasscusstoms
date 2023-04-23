@@ -7,14 +7,6 @@ html, body {
     cursor: url(https://d2w9rnfcy7mm78.cloudfront.net/21509281/original_ecece4e416f1a29fac0fbdda70f07084.png?1682216707?bc=0), auto;
   }
 
-
-@font-face {
-    font-family: 'Coolvetica';
-    src: url('fonts/mycustomfont.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
-
     /*headers flexboxes*/
   h1 {
     width: 100%;
@@ -22,8 +14,7 @@ html, body {
     font-size: 9vw;
     font-family: 'Sedgwick Ave Display', cursive;
     font-weight: 500;
-    letter-spacing: -2px;
-    margin-top: -2vw;
+    margin-top: -1vw;
     margin-bottom: -3.5vw;
     display: flex;
     justify-content: center;
@@ -44,13 +35,13 @@ html, body {
     width: 100%;
     font-size: 2vw;
     color:  #9a9a9a;
+    letter-spacing: 0;
     font-family: 'Manrope', sans-serif;
     padding-bottom: 2vw;
-    letter-spacing: -1px;
     display: flex;
     justify-content: center;
     padding-right: 0;
-    font-weight: 900;
+    font-weight: 500;
     right: 0;
     z-index: 1;
     position: relative;
@@ -173,7 +164,7 @@ html, body {
       width: 2vw;
       height: 2vw;
       padding-left: 9px;
-      padding-top: 1.5vw;
+      padding-top: 2vw;
       position: -webkit-sticky; /* Safari */
       position: sticky;
     }
@@ -238,7 +229,7 @@ html, body {
   align-items: center;
   justify-content: center;
   height: 100%;
-  margin-top: -5vw;
+  margin-top: -3vw;
 }
 
 .slider {
