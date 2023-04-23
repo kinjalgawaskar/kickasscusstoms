@@ -255,7 +255,7 @@ html, body {
 }
 
 .slide:nth-of-type(even) {
-  background-color: rgb(250, 246, 212);
+  background-color: rgb(255, 255, 255);
 }
 
 .slide {
