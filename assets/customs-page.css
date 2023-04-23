@@ -134,11 +134,16 @@ html, body {
 
    /*pictures within the slider*/
 .pictures {
-    border-radius: 0px;
+  filter:grayscale();
+    transition:  background-color 0.5s;
     height: 35vw;
     object-fit: cover; 
     box-shadow:5px 5px rgb(0, 0, 0);
-}
+  }
+  .pictures:hover {
+    filter:saturate();
+    box-shadow:5px 5px rgb(255, 111, 0);
+  }
 
 @media screen and (max-width: 601px) {
     .pictures{
@@ -154,8 +159,8 @@ html, body {
   width: 33vw;
   background-color: #ffffff;
   border-radius: 0px;
-  background-color: #f77d20;
-  box-shadow:5px 5px rgb(0, 0, 0);
+  background-color: rgb(73, 250, 33); 
+  box-shadow: 6px 6px #000000;
   margin-top: -3px;
 }
 
@@ -302,7 +307,7 @@ a.slide__next,
   top: 48%;
   width: 35px;
   height: 35px;
-  border: solid black;
+  border: solid rgb(0, 0, 0);
   border-width: 0 4px 4px 0;
   padding: 3px;
   box-sizing: border-box;
@@ -339,8 +344,8 @@ a.slide__next,
   font-size: 3vw;
   font-family: 'Manrope', sans-serif;
   line-height: 3.2vw;
-  padding-left: 2vw;
-  padding-top: 33px;
+  padding-left: 3vw;
+  padding-top: 4.5vw;
   padding-bottom: 2vw;
   letter-spacing: -1px;
   font-weight: 500;
@@ -350,8 +355,8 @@ a.slide__next,
 .sub-title {
   font-size: 2vw;
   font-family: 'Manrope', sans-serif;
-  color: #ffbe8d;
-  padding-left: 2vw;
+  color: #000000;
+  padding-left: 3vw;
   padding-bottom: 1vw;
   margin-top: -0.5vw;
 }
@@ -359,7 +364,7 @@ a.slide__next,
 .paragraph {
   font-size: 1.2vw;
   font-family: 'Manrope', sans-serif;
-  padding-left: 2vw;
+  padding-left: 3vw;
     margin-top: 1vw;
     width: 26vw;
 }
