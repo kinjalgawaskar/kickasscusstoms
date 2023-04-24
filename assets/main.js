@@ -6,26 +6,15 @@
 
 
 
-const dropdown = document.getElementById("dropdown");
-const items = document.querySelectorAll(".item");
+const select = document.getElementById('dropdown');
+select.addEventListener('change', showSlider);
 
-dropdown.onchange = function() {
-  const selectedCategory = dropdown.value;
-
-  // show all items if "all" is selected
-  if (selectedCategory === "all") {
-    items.forEach(item => {
-      item.style.display = "block";
-    });
-    return;
-  }
-
-  // hide all items that don't belong to the selected category
-  items.forEach(item => {
-    if (item.classList.contains(selectedCategory)) {
-      item.style.display = "block";
+function showSlider() {
+    const sliderContainer = document.querySelector('.slider-container');
+    if (select.value === 'Asia') {
+      sliderContainer.style.display = 'block';
     } else {
-      item.style.display = "none";
+      sliderContainer.style.display = 'none';
     }
-  });
-};
+  }
+  
