@@ -210,17 +210,11 @@ html, body {
    /*slider container bg*/
 .slider-container {
   background-color: #ffffff;
-  display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
-  margin-top: 11vw;
-  display:none"
-}
-@media screen and (max-width: 601px) {
-  .slider-container {
-   display: none;
-}
+  margin-top:2vw;
+  display:none
 }
 
 .slider {
@@ -431,6 +425,9 @@ top-margin {
   
     #dropdown {
       background-color: #ffffff;
+      margin-top: -2vw;
+      height: 3vw;
+      width: 30%;
       border: 2px solid #000000;
       border-radius: 22px;
       font-size: 16px;
