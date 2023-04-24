@@ -433,6 +433,45 @@ video{
   height: 100%;
   width: 18vw;
 }
+@media screen and (max-width: 425px)and (min-width: 320px)  {
+  .donkey{
+    width: 33vw ;
+    margin-top: -93vw;
+    padding-bottom: 33vw;
+  }
+}
+@media screen and (max-width: 601px)and (min-width: 426px)  {
+  .donkey{
+    width: 33vw ;
+    margin-top: -88vw;
+    padding-bottom: 33vw;
+  }
+}
+@media screen and (max-width: 767px)and (min-width: 602px)  {
+  .donkey{
+    width: 28vw;
+  }
+}
+@media screen and (max-width: 1023px)and (min-width: 768px)  {
+  .donkey{
+    width:23vw;
+  }
+}
+@media screen and (max-width: 1880px)and (min-width: 1440px)  {
+  .donkey{
+    width:23vw;
+  }
+}
+@media screen and (max-width: 1435px)and (min-width: 1024px)  {
+  .donkey{
+    width:23vw;
+  }
+}
+@media screen and (max-width: 2560px)and (min-width: 1436px)  {
+  .donkey{
+    width:22vw;
+  }
+}
 
 /*commenting animal media queries*/
 /*2560 viewport*/
@@ -536,6 +575,32 @@ video{
   width: 33vw;
   height: 100%;
 }
+@media screen and (max-width: 767px)and (min-width: 602px)  {
+  .girl{
+    width: 45vw;
+  }
+}
+@media screen and (max-width: 1023px)and (min-width: 768px)  {
+  .girl{
+    width: 43vw;
+  }
+}
+@media screen and (max-width: 1880px)and (min-width: 1440px)  {
+  .girl{
+    width:43vw;
+  }
+}
+@media screen and (max-width: 1435px)and (min-width: 1024px)  {
+  .girl{
+    width:43vw;
+  }
+}
+@media screen and (max-width: 2560px)and (min-width: 1436px)  {
+  .girl{
+    width:43vw;
+  }
+}
+
 .girl:hover {
   animation: rotation 0.3s linear; 
   animation-iteration-count: initial;
@@ -662,12 +727,17 @@ top-margin {
 }
 @media screen and (max-width: 1435px)and (min-width: 1024px)  {
   .phase{
-    margin-top: -21vw;
+    margin-top: -25vw;
   }
 }
-@media screen and (max-width: 1000px)and (min-width: 768px)  {
+@media screen and (max-width: 1023px)and (min-width: 768px)  {
   .phase{
-    margin-top: -29vw;
+    margin-top: -23vw;
+  }
+}
+@media screen and (max-width: 767px)and (min-width: 602px)  {
+  .phase{
+    margin-top: -44vw;
   }
 }
 
