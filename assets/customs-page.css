@@ -214,6 +214,7 @@ html, body {
   justify-content: center;
   height: 100%;
   margin-top:2vw;
+  display: none;
 }
 
 .slider {
@@ -424,7 +425,7 @@ top-margin {
   
     #dropdown {
       background-color: #ffffff;
-      margin-top: -2vw;
+      margin-top: -1vw;
       height: 3vw;
       width: 30%;
       border: 2px solid #000000;
@@ -447,4 +448,6 @@ top-margin {
     .banner {
       display: flex;
       justify-content: center;
+      height: 3vw;
+      cursor: default;
     }

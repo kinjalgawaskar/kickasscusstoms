@@ -605,19 +605,22 @@ video{
   animation: rotation 0.3s linear; 
   animation-iteration-count: initial;
 }
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(-5deg);
-  }
-}
+
 @media screen and (max-width: 601px) {
   .girl {
   display: none;
 }
 }
+
+.girl {
+  transition: transform 0.3s ease-in-out; /* add transition effect for smoother animation */
+}
+
+.girl.rotate {
+  animation-direction: reverse;
+  transform: rotate(-15deg);
+}
+
 
 .line1 {
   border-left: 2px solid rgb(0, 0, 0);
