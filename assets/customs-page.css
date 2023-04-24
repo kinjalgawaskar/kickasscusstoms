@@ -77,19 +77,6 @@ html, body {
   }
 }
 
-  /*dropdown list*/
-  .dropdown{
-    font-family: 'Space Grotesk', sans-serif;
-  z-index: 2;
-  color: #ffffff;
-}
-
-@media screen and (max-width: 601px) {
-  .dropdown{
-   display:none;
-  }
-}
-
 .list{
   font-family: 'Space Grotesk', sans-serif;
   width: 20%;
@@ -227,7 +214,7 @@ html, body {
   align-items: center;
   justify-content: center;
   height: 100%;
-  margin-top: -3vw;
+  margin-top: 11vw;
 }
 @media screen and (max-width: 601px) {
   .slider-container {
@@ -441,3 +428,25 @@ top-margin {
       }
     }
   
+    #dropdown {
+      background-color: #ffffff;
+      border: 2px solid #000000;
+      border-radius: 22px;
+      font-size: 16px;
+      padding: 8px 16px;
+      font-family: 'Manrope', sans-serif;
+      z-index: 111;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    }
+    
+    #dropdown option {
+      background-color: #ffffff;
+      color: #000000;
+    }
+    
+    .banner {
+      display: flex;
+      justify-content: center;
+    }
