@@ -427,71 +427,71 @@ video{
   }
 }
 
-/*1440 original viewport*/
+/*animal*/
 .donkey {
   justify-content:left;
   height: 100%;
-  margin-top: -11vw;
-  width: auto;
+  width: 18vw;
 }
 
+/*commenting animal media queries*/
 /*2560 viewport*/
-@media screen and (max-width: 2560px)and (min-width: 1600px) {
+/* @media screen and (max-width: 2560px)and (min-width: 1600px) {
   .donkey {
   margin-top: -7vw;
-  width: auto;
+  width: 23vw;
 }
-}
+} */
 
 /*1600 viewport*/
-@media screen and (max-width: 1600px)and (min-width: 1440px) {
+/* @media screen and (max-width: 1600px)and (min-width: 1440px) {
   .donkey {
   margin-top: -19vw;
   width: 15vw;
 }
-}
+} */
 
 
 /*1024 viewport*/
-@media screen and (max-width: 1024px)and (min-width: 768px) {
+/* @media screen and (max-width: 1024px)and (min-width: 768px) {
   .donkey {
   margin-top: -30vw;
   width: 15vw;
 }
-}
+} */
 
 /*768 viewport*/
-@media screen and (max-width: 768px)and (min-width: 616px) {
+/* @media screen and (max-width: 768px)and (min-width: 616px) {
   .donkey {
   margin-top: -40vw;
   width: 15vw;
 }
-}
+} */
 
 /*616 viewport*/
-@media screen and (max-width: 616px)and (min-width: 601px) {
+/* @media screen and (max-width: 616px)and (min-width: 601px) {
   .donkey {
   margin-top: -60vw;
   width: 15vw;
 }
-}
+} */
 
 /*601 viewport*/
-@media screen and (max-width: 601px)and (min-width: 448px) {
+/* @media screen and (max-width: 601px)and (min-width: 448px) {
   .donkey {
   margin-top: -90vw;
   width:25vw;
 }
-}
+} */
 
 /*448 viewport*/
-@media screen and (max-width: 448px)and (min-width: 320px) {
+/* @media screen and (max-width: 448px)and (min-width: 320px) {
   .donkey {
   margin-top: -95vw;
   padding-left: 5vw;
   width:31vw;
 }
-}
+} */
 
 .donkey:hover {
   animation: shake 0.5s;
@@ -533,7 +533,6 @@ video{
 }
 
 .girl {
-  margin-top: -19vw;
   width: 33vw;
   height: 100%;
 }
@@ -655,7 +654,6 @@ top-margin {
 .phase {
   display: flex;
   justify-content: center;
-  margin-top: 5vw;
 }
 
 .p3 {
