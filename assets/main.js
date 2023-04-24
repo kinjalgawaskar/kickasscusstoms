@@ -15,6 +15,8 @@ function showSlider() {
     });
   }
   
+
+
 let searchValue = "New York"
 search()
   function search() {
@@ -30,4 +32,15 @@ search()
     });
   }
   
-create an input button     whatever input has (console log it)     take the value and run serach function using that     
+
+
+      // search button
+const searchBtn = document.querySelector("#search-btn");
+  const searchInput = document.querySelector("#search-input");
+  
+  searchBtn.addEventListener("click", () => {
+    const searchTerm = searchInput.value;
+    // perform search with searchTerm
+    console.log(searchTerm);
+  });
+  
