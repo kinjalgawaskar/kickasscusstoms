@@ -459,7 +459,7 @@ video{
 }
 @media screen and (max-width: 1880px)and (min-width: 1440px)  {
   .donkey{
-    width:23vw;
+    width:25vw;
   }
 }
 @media screen and (max-width: 1435px)and (min-width: 1024px)  {
@@ -722,7 +722,7 @@ top-margin {
 }
 @media screen and (max-width: 1880px)and (min-width: 1440px)  {
   .phase{
-    margin-top: -11vw;
+    margin-top: -19vw;
   }
 }
 @media screen and (max-width: 1435px)and (min-width: 1024px)  {
@@ -732,7 +732,7 @@ top-margin {
 }
 @media screen and (max-width: 1023px)and (min-width: 768px)  {
   .phase{
-    margin-top: -23vw;
+    margin-top: -33vw;
   }
 }
 @media screen and (max-width: 767px)and (min-width: 602px)  {

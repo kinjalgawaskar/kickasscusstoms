@@ -141,6 +141,7 @@ html, body {
   height: 35vw;
   width: 33vw;
   background-color: #f38232;
+  overflow: hidden;
   border-radius: 0px;
   box-shadow:5px 5px rgb(0, 0, 0);
   margin-top: -3px;
