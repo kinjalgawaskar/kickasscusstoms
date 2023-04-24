@@ -655,6 +655,21 @@ top-margin {
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 1880px)and (min-width: 1440px)  {
+  .phase{
+    margin-top: -11vw;
+  }
+}
+@media screen and (max-width: 1435px)and (min-width: 1024px)  {
+  .phase{
+    margin-top: -21vw;
+  }
+}
+@media screen and (max-width: 1000px)and (min-width: 768px)  {
+  .phase{
+    margin-top: -29vw;
+  }
+}
 
 .p3 {
   color: #000000;
