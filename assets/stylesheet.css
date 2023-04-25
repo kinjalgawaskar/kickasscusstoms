@@ -556,6 +556,7 @@ video{
 .shoebg {
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .shoe {
@@ -570,6 +571,8 @@ video{
 @media screen and (min-width: 601px) {
   .shoe {
   display: none;
+  position: absolute;
+  transform: translateX(-50%);
 }
 }
 
