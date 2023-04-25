@@ -4,6 +4,7 @@ html, body {
     background-size: cover;
     margin: auto;
     padding: auto;
+    overflow: hidden;
     cursor: url(https://d2w9rnfcy7mm78.cloudfront.net/21509281/original_ecece4e416f1a29fac0fbdda70f07084.png?1682216707?bc=0), auto;
   }
   

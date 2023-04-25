@@ -4,7 +4,13 @@ html, body {
     background-size: cover;
     margin: auto;
     padding: auto;
+    overflow: hidden;
     cursor: url(https://d2w9rnfcy7mm78.cloudfront.net/21509281/original_ecece4e416f1a29fac0fbdda70f07084.png?1682216707?bc=0), auto;
+  }
+  @media screen and (max-width: 601px) {
+    html, body  {
+      overflow:auto;
+  }
   }
 
     /*headers flexboxes*/
@@ -177,8 +183,8 @@ html, body {
   }
   @media screen and (max-width: 601px) {
     .line1{
-      border-left: 1px solid rgb(0, 0, 0);
-    height: 200%;
+      border-left: 1px solid rgb(210, 210, 210);
+    height: 130%;
     left: 7vw;
     position: absolute;
     top: 0;
@@ -197,8 +203,8 @@ html, body {
   }
   @media screen and (max-width: 601px) {
     .line2{
-      border-left: 1px solid rgb(0, 0, 0);
-    height: 100%;
+      border-left: 1px solid rgb(210, 210, 210);
+    height: 130%;
     right: 7vw;
     position: absolute;
     top: 0;
@@ -216,6 +222,11 @@ html, body {
   margin-top:2vw;
   display: none;
   padding-left: 6vw;
+}
+@media screen and (max-width: 601px) {
+  .slider-container {
+    display: none;
+}
 }
 
 .slider {
@@ -279,9 +290,10 @@ a.slide__next,
 .slide__next {
   position: absolute;
   top: 48%;
-  width: 35px;
-  height: 35px;
+  width: 20px;
+  height: 20px;
   border: solid rgb(43, 230, 6);
+  border-radius: 5px;
   border-width: 0 4px 4px 0;
   padding: 3px;
   box-sizing: border-box;
@@ -411,12 +423,11 @@ top-margin {
       width: 80%;
       height: 100%;
       object-fit: contain;
-      box-shadow:3px 3px rgb(73, 233, 20);
       justify-content: center;
       display: flex;
       align-items: center;
       padding-left: 10vw;
-      margin-top: -7vw;
+      margin-top: 7vw;
      }
      @media screen and (min-width: 601px) {
       .mobile-pictures{
@@ -442,15 +453,8 @@ top-margin {
     
     #dropdown option {
       background-color: #ffffff;
+      font-family: 'Manrope', sans-serif;
       border: 2px solid #b2b2b2;
-    }
-    
-    .banner {
-      display: flex;
-      justify-content: center;
-      height: 3vw;
-      cursor: default;
-      margin-top: -2vw;
     }
 
     label.dropdown {
@@ -459,12 +463,66 @@ top-margin {
       color: #b2b2b2;;
     }
 
-    select {
-      color: #58ea1e;
+    select#dropdown.list {
+      color: #000000;
+      width: 50%;
+      font-family: 'Manrope', sans-serif;
+      background-color: #ffffff;
+      border-color: #58ea1e;
+    }
+     
+    /*desktop dropdown*/
+    .banner {
+      display: flex;
+      justify-content: center;
+      height: 3vw;
+      cursor: default;
+      margin-top: -2vw;
+    }
+    @media screen and (max-width: 601px) {
+      .banner{
+       display:none;
+      }
     }
 
+    /*mobile dropdown*/
+    .dropdown-mobile {
+      display: flex;
+      justify-content: center;
+      padding-left: -2px;
+      font-family: 'Manrope', sans-serif;
+      font-size: 3.5vw;
+      height: 5vw;
+      cursor: default;
+      z-index: 13;
+      margin-top: -2vw;
+    }
+    @media screen and (min-width: 601px) {
+      .dropdown-mobile{
+       display:none;
+      }
+    }
+    #dropdown-mobile option {
+      background-color: #ffffff;
+      font-family: 'Manrope', sans-serif;
+    }
 
-    .search-container {
+    label#dropdown-mobile{
+      font-family: 'Manrope', sans-serif;
+      width: 50%;
+      padding-top: 0.7vw;
+      color: #b2b2b2;;
+    }
+
+    select#dropdown.list {
+      color: #000000;
+      width: 50%;
+      background-color: #ffffff;
+      border-color: #58ea1e;
+    }
+     
+
+    /* .search-container {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -477,7 +535,7 @@ top-margin {
       height: 1.5vw;
       width: 90%;
       border: 2px solid #b2b2b2;
-      border-radius: 32px;
+      border-color: #58ea1e;
     }
     
     #search-btn {
@@ -492,4 +550,53 @@ top-margin {
     
     fa-search:before {
       content: "\f002";
+    } */
+
+    .alert {
+      width: 100%;
+      font-size: 2.3vw;
+      color:  #ffca92;
+      letter-spacing: -1px;
+      padding: 1vw;
+      font-family: 'Manrope', sans-serif;
+      font-weight: 0;
+      margin-top: 6vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-right: 0;
+      font-weight: 500;
+      background-color: #ff8128;
+      right: 0;
+      position: relative;
+      transition: right 0.5s, transform 1s;
     }
+    .alert:hover {
+        right: 15px;
+      }
+  
+    @media screen and (max-width: 601px) {
+      .alert{
+       display:none;
+      }
+    }
+
+    /* hide all continent divs except the first one */
+.continent-div:not(:first-child) {
+  display: none;
+}
+
+/* style the selected option in the dropdown */
+option:checked {
+  font-weight: bold;
+  color: #000;
+}
+
+/* style the dropdown and divs */
+select, .continent-div {
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+}
+
