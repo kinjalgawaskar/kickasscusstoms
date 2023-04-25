@@ -720,6 +720,7 @@ top-margin {
 .phase {
   display: flex;
   justify-content: center;
+  height: 100%;
 }
 @media screen and (max-width: 1880px)and (min-width: 1440px)  {
   .phase{
