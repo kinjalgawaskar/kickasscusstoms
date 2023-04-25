@@ -574,7 +574,14 @@ video{
 .girl {
   width: 33vw;
   height: 100%;
+  position: relative;
+			left: 0;
+			transition: left 0.5s, transform 0.5s;
 }
+.girl:hover {
+  left: -70px;
+}
+
 @media screen and (max-width: 767px)and (min-width: 602px)  {
   .girl{
     width: 45vw;
