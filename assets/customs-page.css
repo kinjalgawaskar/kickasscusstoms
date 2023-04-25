@@ -489,9 +489,8 @@ top-margin {
     .dropdown-mobile {
       display: flex;
       justify-content: center;
-      padding-left: -2px;
       font-family: 'Manrope', sans-serif;
-      font-size: 3.5vw;
+      font-size: 3vw;
       height: 5vw;
       cursor: default;
       z-index: 13;
@@ -583,20 +582,30 @@ top-margin {
 
     /* hide all continent divs except the first one */
 .continent-div:not(:first-child) {
-  display: none;
+  display: block;
 }
 
 /* style the selected option in the dropdown */
 option:checked {
-  font-weight: bold;
+  font-family: 'Manrope', sans-serif;
+  justify-content: center;
   color: #000;
+  z-index: 12;
 }
 
 /* style the dropdown and divs */
 select, .continent-div {
-  margin-top: 10px;
   border: 1px solid #ccc;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 22px;
+  justify-content: center;
+  z-index: 12;
+}
+
+select#continent {
+  width: 70%;
+  justify-content: center;
+  height: 9vw;
+  z-index: 12;
 }
 
