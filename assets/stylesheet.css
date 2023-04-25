@@ -601,24 +601,10 @@ video{
   }
 }
 
-.girl:hover {
-  animation: rotation 0.3s linear; 
-  animation-iteration-count: initial;
-}
-
 @media screen and (max-width: 601px) {
   .girl {
   display: none;
 }
-}
-
-.girl {
-  transition: transform 0.3s ease-in-out; /* add transition effect for smoother animation */
-}
-
-.girl.rotate {
-  animation-direction: reverse;
-  transform: rotate(-15deg);
 }
 
 

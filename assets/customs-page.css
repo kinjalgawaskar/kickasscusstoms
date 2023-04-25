@@ -14,7 +14,7 @@ html, body {
     font-size: 9vw;
     font-family: 'Sedgwick Ave Display', cursive;
     font-weight: 500;
-    margin-top: -1vw;
+    margin-top: -2vw;
     margin-bottom: -3.5vw;
     display: flex;
     justify-content: center;
@@ -215,6 +215,7 @@ html, body {
   height: 100%;
   margin-top:2vw;
   display: none;
+  padding-left: 6vw;
 }
 
 .slider {
@@ -426,14 +427,14 @@ top-margin {
     #dropdown {
       background-color: #ffffff;
       height: 3vw;
-      width: 12%;
-      border: 2px solid #000000;
+      width: 20%;
+      border: 2px solid #b2b2b2;
       border-radius: 22px;
       font-size: 16px;
       padding: 8px 16px;
       font-family: 'Manrope', sans-serif;
       z-index: 111;
-    color: #000000;
+    color: #b2b2b2;
     display: flex;
     justify-content: center;
     cursor: default;
@@ -441,7 +442,7 @@ top-margin {
     
     #dropdown option {
       background-color: #ffffff;
-      color: #000000;
+      border: 2px solid #b2b2b2;
     }
     
     .banner {
@@ -449,32 +450,39 @@ top-margin {
       justify-content: center;
       height: 3vw;
       cursor: default;
+      margin-top: -2vw;
     }
 
     label.dropdown {
       font-family: 'Manrope', sans-serif;
-
+      padding-top: 0.7vw;
+      color: #b2b2b2;;
     }
+
+    select {
+      color: #58ea1e;
+    }
+
 
     .search-container {
       display: flex;
       justify-content: center;
       align-items: center;
       background-color: #ffffff;
-      height: 3vw;
       width: 30%;
         }
     
     #search-input {
       padding: 10px;
-      width: 30%;
-      border: 2px solid #000000;
-      border-radius: 22px;
-      margin-right: 10px;
+      height: 1.5vw;
+      width: 90%;
+      border: 2px solid #b2b2b2;
+      border-radius: 32px;
     }
     
     #search-btn {
-      background-color: #000000;
+      background-color: #ffffff;
+      border: 2px solid #b2b2b2;
       color: white;
       padding: 10px;
       border: none;
@@ -482,3 +490,6 @@ top-margin {
       cursor: pointer;
     }
     
+    fa-search:before {
+      content: "\f002";
+    }
