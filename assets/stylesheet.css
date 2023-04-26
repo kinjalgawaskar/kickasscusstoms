@@ -9,14 +9,14 @@ html, body {
   }
   
    /*headers flexboxes*/
-   h1 {
+  h1 {
     width: 100%;
     color: #000000;
     font-size: 9vw;
     font-family: 'Sedgwick Ave Display', cursive;
     font-weight: 500;
-    margin-top: -0.5vw;
-    margin-bottom: -1.5vw;
+    margin-top: -2vw;
+    margin-bottom: -3.5vw;
     display: flex;
     justify-content: center;
     z-index: 1;
@@ -55,6 +55,7 @@ html, body {
     margin-top: -1vw;
   }
   }
+
 
    /*click to enter button section*/
  /* section{
@@ -699,10 +700,10 @@ video{
   padding-left: 47%;
 height: 7vw;
 padding-top:6vw;
+padding-bottom: 9px;
 justify-content: center;
 }
 }
-
 
 top-margin {
   width: 100%;
