@@ -68,8 +68,8 @@ html, body {
 
   /*dropdown list*/
   .dropdown{
-    font-family: 'Space Grotesk', sans-serif;
-  z-index: 2;
+    font-family: 'Manrope', sans-serif;
+    z-index: 2;
   color: #ffffff;
   cursor: default;
 }
@@ -81,7 +81,7 @@ html, body {
 }
 
 .list{
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Manrope', sans-serif;
   width: 20%;
   border-radius: 22px;
   border: none;
@@ -135,7 +135,7 @@ html, body {
   display: block;
   margin: auto;
   font-size: 1rem;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Manrope', sans-serif;
 }
 
 .topnav a.icon {
@@ -410,7 +410,7 @@ video{
   border-radius: 11px;
   letter-spacing: 3px;
   width: 5%;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-size: 3vw;
   background: #000000;
   color: #9ac3db;
@@ -726,7 +726,7 @@ top-margin {
 }
 @media screen and (max-width: 1435px)and (min-width: 1024px)  {
   .phase{
-    margin-top: -25vw;
+    margin-top: -30vw;
   }
 }
 @media screen and (max-width: 1023px)and (min-width: 768px)  {

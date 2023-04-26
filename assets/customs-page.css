@@ -84,7 +84,7 @@ html, body {
 }
 
 .list{
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Manrope', sans-serif;
   width: 20%;
   border-radius: 33px;
   border: none;
@@ -356,7 +356,11 @@ a.slide__next,
     margin-top: 1vw;
     width: 26vw;
 }
-
+@media screen and (max-width: 601px) {
+  .paragraph {
+    font-size: 12px;
+}
+}
 
 top-margin {
   width: 100%;
@@ -426,6 +430,7 @@ top-margin {
       justify-content: center;
       display: flex;
       align-items: center;
+      overflow: hidden;
       padding-left: 10vw;
       margin-top: 7vw;
      }
@@ -460,7 +465,8 @@ top-margin {
     label.dropdown {
       font-family: 'Manrope', sans-serif;
       padding-top: 0.7vw;
-      color: #b2b2b2;;
+      font-size: 1.3vw;
+      color:  #56db21;
     }
 
     select#dropdown.list {
@@ -618,3 +624,21 @@ select#continent {
   z-index: 12;
 }
 
+#continent {
+  padding-left: 20%;
+  justify-content: center;
+}
+ menu {
+  font-family: 'Manrope', sans-serif;
+  color: #58ea1e;
+ }
+ .menu1 {
+  font-family: 'Manrope', sans-serif;
+  color: #58ea1e;
+ }
+
+ .paper {
+display: flex;
+justify-content: center;
+width: 21vw;
+ }
