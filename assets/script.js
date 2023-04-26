@@ -12,17 +12,23 @@ function playAudio() {
   audio.play();
 }
 
-// Get a reference to the shoe image element
+// Getting a reference to the shoe image element
 const shoeImage = document.getElementById('shoe');
 
-// Add a click event listener to the image
+// Adding a click event listener to the image
 shoeImage.addEventListener('click', () => {
   // Get the current position of the image
   const currentPosition = parseInt(shoeImage.style.top || '0');
 
-  // Calculate the new position by subtracting 100 pixels
+  // Calculating the new position by subtracting 100 pixels
   const newPosition = currentPosition - 100;
 
-  // Set the new position on the image element
+  // Setting the new position on the image element
   shoeImage.style.top = newPosition + 'px';
 });
+
+
+function playAudio() {
+  var audio = document.getElementById("myAudio");
+  audio.play();
+}
