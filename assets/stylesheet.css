@@ -673,9 +673,9 @@ video{
 
 .p2 {
   color: #000000;
-  margin-top: -13vw;
+  margin-top: -14vw;
   font-family: 'Manrope', sans-serif;
-  padding-left:98vw;
+  padding-left:97.3vw;
   writing-mode: vertical-lr;
   letter-spacing: 3px;
 }
@@ -723,7 +723,7 @@ top-margin {
 }
 @media screen and (max-width: 1880px)and (min-width: 1440px)  {
   .phase{
-    margin-top: -19vw;
+    margin-top: -21vw;
   }
 }
 @media screen and (max-width: 1435px)and (min-width: 1024px)  {
