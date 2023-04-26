@@ -668,6 +668,7 @@ option:checked {
 select, .continent-div {
   border: 1px solid #ccc;
   padding: 5px;
+  
   border-radius: 22px;
   justify-content: center;
   z-index: 12;
@@ -676,7 +677,7 @@ select, .continent-div {
 select#continent {
   width: 70%;
   justify-content: center;
-  height: 9vw;
+  height: 5vw;
   z-index: 12;
 }
 
@@ -698,3 +699,11 @@ display: flex;
 justify-content: center;
 width: 21vw;
  }
+
+ select {
+  color: #000000;
+  padding-right: 22px;
+  font-family: 'Manrope', sans-serif;
+ }
+
+ 

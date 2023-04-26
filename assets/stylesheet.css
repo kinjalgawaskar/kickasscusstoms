@@ -744,7 +744,7 @@ top-margin {
   color: #000000;
   margin-top: 13vw;
   font-family: 'Manrope', sans-serif;
-  padding-left: 0.8vw;
+  padding-left: 1.5vw;
   font-size: 3vw;
   writing-mode: vertical-lr;
   letter-spacing: 3px;
@@ -764,7 +764,7 @@ top-margin {
   position: absolute;
   writing-mode: vertical-lr;
   letter-spacing: 3px;
-  padding-right: 0.5vw;
+  padding-right: 1vw;
 }
 @media screen and (min-width: 601px) {
   .p4{
