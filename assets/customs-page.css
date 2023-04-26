@@ -97,6 +97,7 @@ html, body {
   z-index: 2;
 }
 
+
 @media screen and (max-width: 601px) {
   .list{
    display:none;
@@ -204,6 +205,10 @@ html, body {
     }
   }
   
+  .carousel:focus {
+    outline: none;
+}
+
 
    /*slider container bg*/
 .slider-container {
@@ -214,6 +219,7 @@ html, body {
   margin-top:2vw;
   display: none;
   padding-left: 6vw;
+  outline: none;
 }
 @media screen and (max-width: 601px) {
   .slider-container {
