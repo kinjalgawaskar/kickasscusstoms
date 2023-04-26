@@ -37,12 +37,13 @@ html, body {
     font-size: 2vw;
     color:  #9a9a9a;
     letter-spacing: 0;
-    font-family: 'Manrope', sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding-bottom: 2vw;
     display: flex;
     justify-content: center;
     padding-right: 0;
     font-weight: 500;
+    margin-top: 2vw;
     right: 0;
     z-index: 1;
     position: relative;
@@ -51,6 +52,7 @@ html, body {
   @media screen and (max-width: 601px) {
     .h2 {
     font-size: 6vw;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     letter-spacing: 0.6px;
     margin-top: -1vw;
   }
